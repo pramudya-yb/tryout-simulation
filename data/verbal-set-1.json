@@ -1,0 +1,166 @@
+[
+  {
+    "id": "verbal-1-001",
+    "category": "verbal",
+    "type": "synonym",
+    "difficulty": "easy",
+    "question": "Sinonim dari kata \"efisien\" adalah...",
+    "stimulus": {},
+    "options": [
+      { "id": "A", "text": "boros" },
+      { "id": "B", "text": "hemat" },
+      { "id": "C", "text": "lambat" },
+      { "id": "D", "text": "rumit" }
+    ],
+    "answer": "B",
+    "explanation": "Efisien berarti menggunakan waktu, tenaga, atau biaya secara tepat dan hemat."
+  },
+  {
+    "id": "verbal-1-002",
+    "category": "verbal",
+    "type": "antonym",
+    "difficulty": "easy",
+    "question": "Antonim dari kata \"stabil\" adalah...",
+    "stimulus": {},
+    "options": [
+      { "id": "A", "text": "tetap" },
+      { "id": "B", "text": "seimbang" },
+      { "id": "C", "text": "berubah-ubah" },
+      { "id": "D", "text": "teratur" }
+    ],
+    "answer": "C",
+    "explanation": "Stabil berarti tetap atau tidak mudah berubah. Antonim yang paling tepat adalah berubah-ubah."
+  },
+  {
+    "id": "verbal-1-003",
+    "category": "verbal",
+    "type": "analogy",
+    "difficulty": "easy",
+    "question": "Dokter : Pasien = Guru : ...",
+    "stimulus": {},
+    "options": [
+      { "id": "A", "text": "kelas" },
+      { "id": "B", "text": "murid" },
+      { "id": "C", "text": "buku" },
+      { "id": "D", "text": "sekolah" }
+    ],
+    "answer": "B",
+    "explanation": "Dokter memberikan layanan kepada pasien, sedangkan guru memberikan pembelajaran kepada murid."
+  },
+  {
+    "id": "verbal-1-004",
+    "category": "verbal",
+    "type": "synonym",
+    "difficulty": "easy",
+    "question": "Sinonim dari kata \"akurat\" adalah...",
+    "stimulus": {},
+    "options": [
+      { "id": "A", "text": "tepat" },
+      { "id": "B", "text": "cepat" },
+      { "id": "C", "text": "ringkas" },
+      { "id": "D", "text": "mudah" }
+    ],
+    "answer": "A",
+    "explanation": "Akurat berarti tepat, benar, atau sesuai dengan keadaan sebenarnya."
+  },
+  {
+    "id": "verbal-1-005",
+    "category": "verbal",
+    "type": "antonym",
+    "difficulty": "easy",
+    "question": "Antonim dari kata \"optimis\" adalah...",
+    "stimulus": {},
+    "options": [
+      { "id": "A", "text": "yakin" },
+      { "id": "B", "text": "semangat" },
+      { "id": "C", "text": "pesimis" },
+      { "id": "D", "text": "percaya diri" }
+    ],
+    "answer": "C",
+    "explanation": "Optimis berarti memiliki harapan baik. Antonimnya adalah pesimis, yaitu cenderung melihat kemungkinan buruk."
+  },
+  {
+    "id": "verbal-1-006",
+    "category": "verbal",
+    "type": "analogy",
+    "difficulty": "medium",
+    "question": "Api : Panas = Es : ...",
+    "stimulus": {},
+    "options": [
+      { "id": "A", "text": "beku" },
+      { "id": "B", "text": "dingin" },
+      { "id": "C", "text": "cair" },
+      { "id": "D", "text": "putih" }
+    ],
+    "answer": "B",
+    "explanation": "Api memiliki sifat panas, sedangkan es memiliki sifat dingin."
+  },
+  {
+    "id": "verbal-1-007",
+    "category": "verbal",
+    "type": "paragraph",
+    "difficulty": "medium",
+    "question": "Bacalah pernyataan berikut: \"Perusahaan meningkatkan pelatihan karyawan agar kualitas pelayanan pelanggan semakin baik.\" Kesimpulan yang paling tepat adalah...",
+    "stimulus": {
+      "text": "Perusahaan meningkatkan pelatihan karyawan agar kualitas pelayanan pelanggan semakin baik."
+    },
+    "options": [
+      { "id": "A", "text": "Pelatihan dianggap dapat meningkatkan kualitas pelayanan." },
+      { "id": "B", "text": "Semua pelanggan tidak puas dengan pelayanan perusahaan." },
+      { "id": "C", "text": "Perusahaan mengurangi jumlah karyawan." },
+      { "id": "D", "text": "Pelayanan pelanggan tidak berhubungan dengan karyawan." }
+    ],
+    "answer": "A",
+    "explanation": "Pernyataan menunjukkan hubungan antara pelatihan karyawan dan peningkatan kualitas pelayanan."
+  },
+  {
+    "id": "verbal-1-008",
+    "category": "verbal",
+    "type": "synonym",
+    "difficulty": "medium",
+    "question": "Sinonim dari kata \"komitmen\" adalah...",
+    "stimulus": {},
+    "options": [
+      { "id": "A", "text": "keraguan" },
+      { "id": "B", "text": "kesepakatan" },
+      { "id": "C", "text": "keterikatan" },
+      { "id": "D", "text": "penolakan" }
+    ],
+    "answer": "C",
+    "explanation": "Komitmen berarti keterikatan atau kesungguhan untuk menjalankan tanggung jawab."
+  },
+  {
+    "id": "verbal-1-009",
+    "category": "verbal",
+    "type": "antonym",
+    "difficulty": "medium",
+    "question": "Antonim dari kata \"produktif\" adalah...",
+    "stimulus": {},
+    "options": [
+      { "id": "A", "text": "aktif" },
+      { "id": "B", "text": "menghasilkan" },
+      { "id": "C", "text": "efektif" },
+      { "id": "D", "text": "pasif" }
+    ],
+    "answer": "D",
+    "explanation": "Produktif berarti mampu menghasilkan sesuatu. Lawan makna yang paling dekat adalah pasif."
+  },
+  {
+    "id": "verbal-1-010",
+    "category": "verbal",
+    "type": "paragraph",
+    "difficulty": "medium",
+    "question": "Bacalah pernyataan berikut: \"Tim yang mampu berkomunikasi dengan jelas biasanya lebih mudah menyelesaikan pekerjaan bersama.\" Makna utama kalimat tersebut adalah...",
+    "stimulus": {
+      "text": "Tim yang mampu berkomunikasi dengan jelas biasanya lebih mudah menyelesaikan pekerjaan bersama."
+    },
+    "options": [
+      { "id": "A", "text": "Komunikasi yang jelas dapat membantu kerja sama tim." },
+      { "id": "B", "text": "Pekerjaan tim selalu lebih sulit daripada pekerjaan individu." },
+      { "id": "C", "text": "Komunikasi tidak penting dalam pekerjaan." },
+      { "id": "D", "text": "Semua tim pasti berhasil jika memiliki banyak anggota." }
+    ],
+    "answer": "A",
+    "explanation": "Kalimat tersebut menekankan bahwa komunikasi yang jelas membantu tim menyelesaikan pekerjaan bersama."
+  }
+]

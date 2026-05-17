@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — Simulasi Psikotes</title>
+  <meta name="description" content="Halaman admin untuk mengelola soal psikotes." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" role="navigation">
+  <div class="navbar-inner">
+    <a class="navbar-brand" href="index.html">
+      🧠 <span>Simulasi</span> Psikotes
+    </a>
+    <button class="navbar-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="navbar-menu" id="nav-menu">
+      <li><a href="index.html">← Kembali ke Aplikasi</a></li>
+      <li>
+        <a href="https://pramudya-yb.github.io/Test-123/"
+           target="_blank" rel="noopener" class="nav-home">🏠 Homepage</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div style="background:linear-gradient(135deg,#e8f0fe 0%,#f8f6f2 60%);padding:2rem 1.25rem 1.5rem;">
+  <div class="container">
+    <h1 style="font-size:1.6rem;color:#1e3a5f;margin-bottom:0.3rem;">⚙ Halaman Admin</h1>
+    <p style="color:#6b7c93;font-size:0.92rem;">
+      Buat dan kelola soal psikotes. Mode offline: generate &amp; download JSON.
+      Mode online: simpan langsung ke GitHub dengan token.
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="admin-layout">
+
+    <!-- ==============================
+         SIDEBAR
+    ============================== -->
+    <aside class="admin-sidebar">
+      <h3>Menu Admin</h3>
+      <ul class="sidebar-nav">
+        <li><a href="#section-create" class="active">📝 Buat Soal Baru</a></li>
+        <li><a href="#section-github">☁ Konfigurasi GitHub</a></li>
+        <li><a href="#section-schema">📖 Skema Soal</a></li>
+        <li><a href="index.html">🏠 Kembali ke Aplikasi</a></li>
+      </ul>
+
+      <hr style="border:none;border-top:1px solid #e0e4ea;margin:1rem 0;" />
+
+      <h3>Pilih File Target</h3>
+      <select class="form-control" id="target-file-select">
+        <option value="">-- Pilih File --</option>
+      </select>
+      <p class="form-hint">File ini akan menjadi target simpan soal.</p>
+
+      <div id="admin-status-global"></div>
+    </aside>
+
+    <!-- ==============================
+         MAIN CONTENT
+    ============================== -->
+    <main class="admin-main">
+
+      <!-- =========================================
+           SECTION: BUAT SOAL BARU
+      ========================================= -->
+      <section id="section-create">
+
+        <!-- Tabs -->
+        <div class="admin-tabs">
+          <button class="admin-tab-btn active" data-tab="tab-cognitive">Soal Kognitif</button>
+          <button class="admin-tab-btn" data-tab="tab-workstyle">Tes Gaya Kerja</button>
+        </div>
+
+        <!-- ===== TAB: KOGNITIF ===== -->
+        <div class="admin-tab-panel active" id="tab-cognitive">
+          <div class="admin-card" id="admin-form">
+            <div class="admin-card-title">📝 Buat Soal Kognitif Baru</div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="q-id">ID Soal <span class="required">*</span></label>
+                <input type="text" class="form-control" id="q-id" placeholder="Contoh: verbal-set-1-001" />
+                <p class="form-hint">Format: {kategori}-set{nomor}-{urutan}</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="q-category">Kategori <span class="required">*</span></label>
+                <select class="form-control" id="q-category">
+                  <!-- filled by admin.js -->
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="q-type">Tipe Soal</label>
+                <select class="form-control" id="q-type">
+                  <option value="synonym">Sinonim</option>
+                  <option value="antonym">Antonim</option>
+                  <option value="analogy">Analogi</option>
+                  <option value="paragraph">Pemahaman Paragraf</option>
+                  <option value="number-series">Deret Angka</option>
+                  <option value="table">Tabel Data</option>
+                  <option value="bar-chart">Grafik Batang</option>
+                  <option value="line-chart">Grafik Garis</option>
+                  <option value="syllogism">Silogisme</option>
+                  <option value="figural-sequence">Urutan Figural</option>
+                  <option value="matrix-pattern">Matriks Pola</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="q-difficulty">Tingkat Kesulitan</label>
+                <select class="form-control" id="q-difficulty">
+                  <option value="easy">Mudah</option>
+                  <option value="medium" selected>Sedang</option>
+                  <option value="hard">Sulit</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q-question">Teks Pertanyaan <span class="required">*</span></label>
+              <textarea class="form-control" id="q-question" rows="3"
+                placeholder="Tuliskan teks pertanyaan dalam bahasa Indonesia..."></textarea>
+            </div>
+
+            <!-- Stimulus fields (numerical) -->
+            <div id="numerical-stimulus-fields" class="hidden">
+              <div class="form-group">
+                <label class="form-label" for="q-stimulus-json">Data Stimulus (JSON)</label>
+                <textarea class="form-control" id="q-stimulus-json" rows="4"
+                  placeholder='Contoh: { "type": "table", "title": "Data Penjualan", "headers": ["Bulan", "Jumlah"], "rows": [["Januari", "120"], ["Februari", "150"]] }'></textarea>
+                <p class="form-hint">
+                  Untuk tabel: type "table". Untuk grafik: type "bar-chart" atau "line-chart".
+                  Untuk teks: type "scenario".
+                </p>
+              </div>
+            </div>
+
+            <!-- Stimulus fields (figural) -->
+            <div id="figural-stimulus-fields" class="hidden">
+              <div class="form-group">
+                <label class="form-label" for="q-stimulus-json">Data Pola Figural (JSON)</label>
+                <textarea class="form-control" id="q-stimulus-json" rows="4"
+                  placeholder='Contoh: { "type": "matrix-pattern", "cols": 3, "matrix": [[{"shape":"circle"},{"shape":"square"},{"shape":"triangle"}]] }'></textarea>
+                <p class="form-hint">
+                  Tipe pola: lines-increase, moving-dot, rotation, shading, shape-progression, matrix-pattern.
+                </p>
+              </div>
+            </div>
+
+            <!-- Options -->
+            <div class="form-group" id="cognitive-fields">
+              <label class="form-label">Pilihan Jawaban <span class="required">*</span></label>
+              <p class="form-hint" style="margin-bottom:0.5rem;">Centang radio di kanan untuk menandai jawaban benar.</p>
+              <div class="options-editor" id="options-editor">
+                <!-- A -->
+                <div class="option-row">
+                  <div class="option-id">A</div>
+                  <input type="text" class="form-control" id="opt-A" placeholder="Teks pilihan A" />
+                  <label style="display:flex;align-items:center;gap:0.3rem;font-size:0.82rem;color:#6b7c93;">
+                    <input type="radio" name="correct-opt" value="A" class="correct-radio" /> Benar
+                  </label>
+                </div>
+                <!-- B -->
+                <div class="option-row">
+                  <div class="option-id">B</div>
+                  <input type="text" class="form-control" id="opt-B" placeholder="Teks pilihan B" />
+                  <label style="display:flex;align-items:center;gap:0.3rem;font-size:0.82rem;color:#6b7c93;">
+                    <input type="radio" name="correct-opt" value="B" class="correct-radio" /> Benar
+                  </label>
+                </div>
+                <!-- C -->
+                <div class="option-row">
+                  <div class="option-id">C</div>
+                  <input type="text" class="form-control" id="opt-C" placeholder="Teks pilihan C" />
+                  <label style="display:flex;align-items:center;gap:0.3rem;font-size:0.82rem;color:#6b7c93;">
+                    <input type="radio" name="correct-opt" value="C" class="correct-radio" /> Benar
+                  </label>
+                </div>
+                <!-- D -->
+                <div class="option-row">
+                  <div class="option-id">D</div>
+                  <input type="text" class="form-control" id="opt-D" placeholder="Teks pilihan D" />
+                  <label style="display:flex;align-items:center;gap:0.3rem;font-size:0.82rem;color:#6b7c93;">
+                    <input type="radio" name="correct-opt" value="D" class="correct-radio" /> Benar
+                  </label>
+                </div>
+                <!-- E (optional) -->
+                <div class="option-row">
+                  <div class="option-id">E</div>
+                  <input type="text" class="form-control" id="opt-E" placeholder="Teks pilihan E (opsional)" />
+                  <label style="display:flex;align-items:center;gap:0.3rem;font-size:0.82rem;color:#6b7c93;">
+                    <input type="radio" name="correct-opt" value="E" class="correct-radio" /> Benar
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q-explanation">Pembahasan (Opsional)</label>
+              <textarea class="form-control" id="q-explanation" rows="2"
+                placeholder="Pembahasan atau penjelasan jawaban benar..."></textarea>
+            </div>
+
+            <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1rem;">
+              <button class="btn btn-primary" id="btn-generate">⚡ Generate Soal</button>
+              <button class="btn btn-ghost" id="btn-reset-form">🗑 Reset Form</button>
+            </div>
+
+            <div id="form-status" class="status-msg" style="display:none;margin-top:0.75rem;"></div>
+          </div>
+        </div><!-- /tab-cognitive -->
+
+        <!-- ===== TAB: GAYA KERJA ===== -->
+        <div class="admin-tab-panel" id="tab-workstyle">
+          <div class="admin-card">
+            <div class="admin-card-title">🧠 Buat Soal Gaya Kerja (Likert)</div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="q-id">ID Soal <span class="required">*</span></label>
+                <input type="text" class="form-control" id="q-id" placeholder="Contoh: workstyle-set-1-001" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="q-dimension">Dimensi Gaya Kerja <span class="required">*</span></label>
+                <select class="form-control" id="q-dimension">
+                  <!-- filled by admin.js -->
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group" id="workstyle-fields">
+              <label class="form-label" for="q-statement">Teks Pernyataan <span class="required">*</span></label>
+              <textarea class="form-control" id="q-statement" rows="3"
+                placeholder="Contoh: Saya merasa nyaman memimpin diskusi kelompok dalam situasi yang tidak terstruktur."></textarea>
+              <p class="form-hint">Tulis pernyataan yang mencerminkan perilaku kerja dalam bahasa Indonesia.</p>
+            </div>
+
+            <div class="form-group">
+              <label class="check-group">
+                <input type="checkbox" id="q-reverse-scored" />
+                Reverse Scored (skor dibalik saat kalkulasi)
+              </label>
+              <p class="form-hint">Centang jika pernyataan ini bersifat negatif terhadap dimensinya.</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q-interpretation">Interpretasi (Opsional)</label>
+              <input type="text" class="form-control" id="q-interpretation"
+                placeholder="Contoh: Mengukur kecenderungan kepemimpinan dan inisiatif kerja." />
+            </div>
+
+            <div class="alert alert-info" style="font-size:0.85rem;margin-top:0.75rem;">
+              ℹ Skala Likert: 1 = Sangat Tidak Sesuai, 2 = Tidak Sesuai, 3 = Netral, 4 = Sesuai, 5 = Sangat Sesuai.
+              Tidak ada jawaban benar atau salah.
+            </div>
+
+            <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1rem;">
+              <button class="btn btn-primary" onclick="ADMIN.questionType='workstyle'; _generateQuestion()">
+                ⚡ Generate Soal Gaya Kerja
+              </button>
+              <button class="btn btn-ghost" id="btn-reset-form-ws" onclick="_resetForm()">🗑 Reset Form</button>
+            </div>
+
+            <div id="form-status-ws" class="status-msg" style="display:none;margin-top:0.75rem;"></div>
+          </div>
+        </div><!-- /tab-workstyle -->
+
+        <!-- PREVIEW + JSON OUTPUT -->
+        <div class="admin-card">
+          <div class="admin-card-title">👁 Preview Soal</div>
+          <div class="preview-panel">
+            <div id="preview-content">
+              <p class="preview-empty">Preview soal akan muncul di sini setelah digenerate.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-card">
+          <div class="admin-card-title">📋 Output JSON</div>
+          <div class="json-output-wrapper">
+            <pre class="json-output" id="json-output"></pre>
+          </div>
+          <div class="json-actions">
+            <button class="btn btn-ghost btn-sm" id="btn-copy-json">📋 Salin JSON</button>
+            <button class="btn btn-ghost btn-sm" id="btn-download-json">⬇ Download JSON</button>
+            <button class="btn btn-secondary btn-sm" id="btn-save-github">☁ Simpan ke GitHub</button>
+          </div>
+          <div id="github-status" class="status-msg" style="display:none;margin-top:0.75rem;"></div>
+        </div>
+
+      </section><!-- /section-create -->
+
+      <!-- =========================================
+           SECTION: GITHUB CONFIG
+      ========================================= -->
+      <section id="section-github" style="margin-top:1.5rem;">
+        <div class="admin-card">
+          <div class="admin-card-title">☁ Konfigurasi GitHub</div>
+
+          <div class="token-warning">
+            ⚠ <strong>Peringatan Keamanan:</strong> Jangan bagikan token GitHub kepada siapa pun.
+            Token disimpan sementara di <code>sessionStorage</code> browser Anda dan akan hilang
+            saat tab ditutup. Token <strong>tidak pernah</strong> dikirim ke server manapun selain GitHub API.
+          </div>
+
+          <div class="github-config-grid">
+            <div class="form-group">
+              <label class="form-label" for="gh-owner">Owner / Username GitHub</label>
+              <input type="text" class="form-control" id="gh-owner"
+                placeholder="sagaevans" value="sagaevans" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="gh-repo">Nama Repositori</label>
+              <input type="text" class="form-control" id="gh-repo"
+                placeholder="SIMULASI-PSIKOTES-ONLINE" value="SIMULASI-PSIKOTES-ONLINE" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="gh-branch">Branch Target</label>
+              <input type="text" class="form-control" id="gh-branch"
+                placeholder="main" value="main" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="gh-token">
+              Personal Access Token GitHub
+              <span class="required">*</span>
+            </label>
+            <div class="token-input-wrap">
+              <input type="password" class="form-control" id="gh-token"
+                placeholder="ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                autocomplete="off" />
+              <button class="token-toggle" id="btn-token-toggle" title="Tampilkan/sembunyikan token">👁</button>
+            </div>
+            <p class="form-hint">
+              Buat token di: GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic).
+              Centang scope: <code>repo</code> (akses penuh ke repositori).
+            </p>
+          </div>
+
+          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <button class="btn btn-secondary btn-sm" id="btn-test-token">🔌 Uji Koneksi Token</button>
+            <button class="btn btn-ghost btn-sm" id="btn-clear-token">🗑 Hapus Token</button>
+            <button class="btn btn-outline btn-sm" id="btn-load-github">⬇ Muat Data dari GitHub</button>
+          </div>
+
+          <div id="github-status-config" class="status-msg" style="display:none;margin-top:0.75rem;"></div>
+        </div>
+
+        <!-- Loaded questions list -->
+        <div class="admin-card">
+          <div class="admin-card-title">📂 Soal di File Terpilih</div>
+          <div id="question-list">
+            <p class="text-muted" style="font-size:0.88rem;">
+              Muat data dari GitHub untuk melihat soal yang sudah ada.
+            </p>
+          </div>
+        </div>
+
+      </section><!-- /section-github -->
+
+      <!-- =========================================
+           SECTION: SCHEMA DOCUMENTATION
+      ========================================= -->
+      <section id="section-schema" style="margin-top:1.5rem;">
+        <div class="admin-card">
+          <div class="admin-card-title">📖 Skema Soal (Referensi)</div>
+
+          <p style="font-size:0.9rem;color:#6b7c93;margin-bottom:1rem;">
+            Dokumentasi format JSON untuk setiap jenis soal. Gunakan sebagai referensi
+            saat menambahkan soal secara manual.
+          </p>
+
+          <!-- Cognitive schema -->
+          <h4 style="color:#1e3a5f;margin-bottom:0.5rem;">Soal Kognitif (Verbal, Numerik, Logika, Figural)</h4>
+          <pre style="background:#1e2a3a;color:#a8d8a8;border-radius:8px;padding:1rem;font-size:0.8rem;overflow-x:auto;white-space:pre-wrap;">{
+  "id": "verbal-1-001",
+  "category": "verbal",
+  "type": "synonym | antonym | analogy | paragraph | table | bar-chart | number-series | syllogism | figural-sequence",
+  "difficulty": "easy | medium | hard",
+  "question": "Pertanyaan dalam bahasa Indonesia",
+  "stimulus": {},
+  "options": [
+    { "id": "A", "text": "..." },
+    { "id": "B", "text": "..." },
+    { "id": "C", "text": "..." },
+    { "id": "D", "text": "..." }
+  ],
+  "answer": "A",
+  "explanation": "Pembahasan dalam bahasa Indonesia"
+}</pre>
+
+          <!-- Numerical stimulus examples -->
+          <h4 style="color:#1e3a5f;margin:1rem 0 0.5rem;">Contoh Stimulus Numerik</h4>
+          <pre style="background:#1e2a3a;color:#a8d8a8;border-radius:8px;padding:1rem;font-size:0.8rem;overflow-x:auto;white-space:pre-wrap;">{
+  "type": "table",
+  "title": "Data Penjualan Produk (Unit)",
+  "headers": ["Produk", "Q1", "Q2", "Q3"],
+  "rows": [
+    ["Produk A", "120", "145", "160"],
+    ["Produk B", "80",  "95",  "110"]
+  ]
+}
+
+{
+  "type": "bar-chart",
+  "title": "Jumlah Karyawan per Departemen",
+  "labels": ["SDM", "IT", "Keuangan", "Operasional"],
+  "values": [25, 40, 18, 55],
+  "unit": " orang"
+}
+
+{
+  "type": "scenario",
+  "text": "Sebuah perusahaan memiliki pendapatan Rp 500 juta pada tahun 2023 dan meningkat 20% pada tahun 2024. Biaya operasional adalah Rp 350 juta."
+}</pre>
+
+          <!-- Figural stimulus examples -->
+          <h4 style="color:#1e3a5f;margin:1rem 0 0.5rem;">Contoh Stimulus Figural</h4>
+          <pre style="background:#1e2a3a;color:#a8d8a8;border-radius:8px;padding:1rem;font-size:0.8rem;overflow-x:auto;white-space:pre-wrap;">{
+  "type": "matrix-pattern",
+  "cols": 3,
+  "matrix": [
+    [{"shape":"circle","size":24}, {"shape":"square","size":24}, {"shape":"triangle","size":24}],
+    [{"shape":"square","size":24}, {"shape":"triangle","size":24}, {"shape":"circle","size":24}],
+    [{"shape":"triangle","size":24}, {"shape":"circle","size":24}, "?"]
+  ]
+}
+
+{
+  "type": "shape-progression",
+  "items": [
+    {"shape":"circle","size":16},
+    {"shape":"circle","size":24},
+    {"shape":"circle","size":32},
+    "?"
+  ]
+}</pre>
+
+          <!-- Workstyle schema -->
+          <h4 style="color:#1e3a5f;margin:1rem 0 0.5rem;">Soal Gaya Kerja (Likert)</h4>
+          <pre style="background:#1e2a3a;color:#a8d8a8;border-radius:8px;padding:1rem;font-size:0.8rem;overflow-x:auto;white-space:pre-wrap;">{
+  "id": "workstyle-1-001",
+  "category": "workstyle",
+  "type": "likert",
+  "dimension": "leadership | influence | steadiness | compliance | teamwork | adaptability | achievement | responsibility",
+  "statement": "Saya nyaman mengambil inisiatif ketika tim membutuhkan arahan.",
+  "reverseScored": false,
+  "interpretation": "Mengukur kecenderungan kepemimpinan dan inisiatif kerja."
+}</pre>
+
+          <div class="alert alert-info" style="margin-top:1rem;font-size:0.85rem;">
+            ℹ <strong>Dimensi Gaya Kerja:</strong>
+            leadership (Kepemimpinan), influence (Komunikasi &amp; Pengaruh Sosial),
+            steadiness (Stabilitas &amp; Konsistensi), compliance (Ketelitian &amp; Kepatuhan Prosedur),
+            teamwork (Kerjasama Tim), adaptability (Adaptasi),
+            achievement (Orientasi Target), responsibility (Tanggung Jawab).
+          </div>
+        </div>
+      </section><!-- /section-schema -->
+
+    </main><!-- /admin-main -->
+  </div><!-- /admin-layout -->
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer class="footer" style="margin-top:3rem;">
+  <div class="footer-inner">
+    <div class="footer-brand">⚙ Admin — Simulasi Psikotes</div>
+    <nav class="footer-links">
+      <a href="index.html">Kembali ke Aplikasi</a>
+      <a href="https://pramudya-yb.github.io/Test-123/"
+         target="_blank" rel="noopener">🏠 Homepage</a>
+    </nav>
+    <p class="footer-copy" style="font-size:0.8rem;">
+      ⚠ Token GitHub hanya tersimpan di sessionStorage browser Anda. Jangan bagikan ke siapapun.
+    </p>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="js/timer.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/randomizer.js"></script>
+<script src="js/data-loader.js"></script>
+<script src="js/scoring.js"></script>
+<script src="js/render-figural.js"></script>
+<script src="js/render-numerical.js"></script>
+<script src="js/radar-chart.js"></script>
+<script src="js/github-api.js"></script>
+<script src="js/admin.js"></script>
+
+<script>
+  // Navbar toggle
+  document.getElementById('nav-toggle').addEventListener('click', () => {
+    document.getElementById('nav-menu').classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>

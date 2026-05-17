@@ -1,0 +1,142 @@
+[
+  {
+    "id": "numerical-1-001",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "question": "Lanjutkan deret angka berikut: 2, 4, 8, 16, ...",
+    "options": [
+      { "id": "A", "text": "20" },
+      { "id": "B", "text": "24" },
+      { "id": "C", "text": "32" },
+      { "id": "D", "text": "36" }
+    ],
+    "answer": "C",
+    "explanation": "Pola deret dikali 2. Jadi 16 × 2 = 32."
+  },
+  {
+    "id": "numerical-1-002",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "question": "Berapakah 25% dari 240?",
+    "options": [
+      { "id": "A", "text": "40" },
+      { "id": "B", "text": "50" },
+      { "id": "C", "text": "60" },
+      { "id": "D", "text": "80" }
+    ],
+    "answer": "C",
+    "explanation": "25% sama dengan 1/4. Jadi 240 ÷ 4 = 60."
+  },
+  {
+    "id": "numerical-1-003",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "question": "Nilai rata-rata dari 70, 80, dan 90 adalah ...",
+    "options": [
+      { "id": "A", "text": "75" },
+      { "id": "B", "text": "80" },
+      { "id": "C", "text": "85" },
+      { "id": "D", "text": "90" }
+    ],
+    "answer": "B",
+    "explanation": "Jumlah nilai = 70 + 80 + 90 = 240. Rata-rata = 240 ÷ 3 = 80."
+  },
+  {
+    "id": "numerical-1-004",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "question": "Perbandingan jumlah pegawai pria dan wanita adalah 2 : 3. Jika total pegawai 100 orang, berapa jumlah pegawai pria?",
+    "options": [
+      { "id": "A", "text": "20" },
+      { "id": "B", "text": "30" },
+      { "id": "C", "text": "40" },
+      { "id": "D", "text": "60" }
+    ],
+    "answer": "C",
+    "explanation": "Total perbandingan = 2 + 3 = 5. Pegawai pria = 2/5 × 100 = 40."
+  },
+  {
+    "id": "numerical-1-005",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "question": "Sebuah barang seharga Rp200.000 mendapat diskon 10%. Berapa harga barang setelah diskon?",
+    "options": [
+      { "id": "A", "text": "Rp160.000" },
+      { "id": "B", "text": "Rp170.000" },
+      { "id": "C", "text": "Rp180.000" },
+      { "id": "D", "text": "Rp190.000" }
+    ],
+    "answer": "C",
+    "explanation": "Diskon = 10% × 200.000 = 20.000. Harga akhir = 200.000 - 20.000 = Rp180.000."
+  },
+  {
+    "id": "numerical-1-006",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "question": "Jika 5 pekerja dapat menyelesaikan pekerjaan dalam 12 hari, maka 10 pekerja dapat menyelesaikan pekerjaan yang sama dalam ... hari.",
+    "options": [
+      { "id": "A", "text": "4" },
+      { "id": "B", "text": "5" },
+      { "id": "C", "text": "6" },
+      { "id": "D", "text": "8" }
+    ],
+    "answer": "C",
+    "explanation": "Jumlah pekerja menjadi 2 kali lipat, maka waktu menjadi setengahnya. 12 ÷ 2 = 6 hari."
+  },
+  {
+    "id": "numerical-1-007",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "question": "Sebuah kendaraan menempuh jarak 180 km dalam waktu 3 jam. Berapa kecepatan rata-ratanya?",
+    "options": [
+      { "id": "A", "text": "50 km/jam" },
+      { "id": "B", "text": "60 km/jam" },
+      { "id": "C", "text": "70 km/jam" },
+      { "id": "D", "text": "90 km/jam" }
+    ],
+    "answer": "B",
+    "explanation": "Kecepatan = jarak ÷ waktu = 180 ÷ 3 = 60 km/jam."
+  },
+  {
+    "id": "numerical-1-008",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "question": "Lanjutkan deret angka berikut: 3, 6, 11, 18, 27, ...",
+    "options": [
+      { "id": "A", "text": "34" },
+      { "id": "B", "text": "36" },
+      { "id": "C", "text": "38" },
+      { "id": "D", "text": "40" }
+    ],
+    "answer": "C",
+    "explanation": "Selisihnya adalah +3, +5, +7, +9. Selisih berikutnya +11. Jadi 27 + 11 = 38."
+  },
+  {
+    "id": "numerical-1-009",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "question": "Data penjualan toko selama 4 hari adalah: Senin 20 unit, Selasa 25 unit, Rabu 30 unit, Kamis 35 unit. Berapa total penjualan selama 4 hari?",
+    "options": [
+      { "id": "A", "text": "100 unit" },
+      { "id": "B", "text": "105 unit" },
+      { "id": "C", "text": "110 unit" },
+      { "id": "D", "text": "120 unit" }
+    ],
+    "answer": "C",
+    "explanation": "Total penjualan = 20 + 25 + 30 + 35 = 110 unit."
+  },
+  {
+    "id": "numerical-1-010",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "question": "Modal awal seorang pedagang adalah Rp500.000. Setelah berjualan, ia mendapat keuntungan 20%. Berapa total uang yang dimiliki setelah mendapat keuntungan?",
+    "options": [
+      { "id": "A", "text": "Rp550.000" },
+      { "id": "B", "text": "Rp575.000" },
+      { "id": "C", "text": "Rp600.000" },
+      { "id": "D", "text": "Rp650.000" }
+    ],
+    "answer": "C",
+    "explanation": "Keuntungan = 20% × 500.000 = 100.000. Total uang = 500.000 + 100.000 = Rp600.000."
+  }
+]

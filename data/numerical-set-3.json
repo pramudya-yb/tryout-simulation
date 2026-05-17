@@ -1,0 +1,302 @@
+[
+  {
+    "id": "numerical-3-001",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Lanjutkan deret angka berikut: 5, 11, 23, 47, 95, ...",
+    "options": [
+      { "id": "A", "text": "181" },
+      { "id": "B", "text": "185" },
+      { "id": "C", "text": "191" },
+      { "id": "D", "text": "195" }
+    ],
+    "answer": "C",
+    "explanation": "Pola deret adalah dikali 2 lalu ditambah 1. 5×2+1=11, 11×2+1=23, 23×2+1=47, 47×2+1=95, maka 95×2+1=191."
+  },
+  {
+    "id": "numerical-3-002",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Lanjutkan deret angka berikut: 4, 7, 13, 25, 49, ...",
+    "options": [
+      { "id": "A", "text": "91" },
+      { "id": "B", "text": "93" },
+      { "id": "C", "text": "95" },
+      { "id": "D", "text": "97" }
+    ],
+    "answer": "D",
+    "explanation": "Selisihnya adalah +3, +6, +12, +24. Selisih berikutnya +48, maka 49 + 48 = 97."
+  },
+  {
+    "id": "numerical-3-003",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Rata-rata nilai 8 peserta adalah 76. Setelah 2 peserta dengan nilai 68 dan 72 keluar dari perhitungan, berapa rata-rata nilai 6 peserta yang tersisa?",
+    "options": [
+      { "id": "A", "text": "77" },
+      { "id": "B", "text": "78" },
+      { "id": "C", "text": "79" },
+      { "id": "D", "text": "80" }
+    ],
+    "answer": "B",
+    "explanation": "Total nilai awal = 8×76 = 608. Nilai yang keluar = 68+72 = 140. Total tersisa = 608-140 = 468. Rata-rata baru = 468÷6 = 78."
+  },
+  {
+    "id": "numerical-3-004",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Sebuah barang dinaikkan harganya sebesar 25%, lalu diberi diskon 20%. Jika harga awal Rp800.000, maka harga akhirnya adalah ...",
+    "options": [
+      { "id": "A", "text": "Rp780.000" },
+      { "id": "B", "text": "Rp800.000" },
+      { "id": "C", "text": "Rp820.000" },
+      { "id": "D", "text": "Rp840.000" }
+    ],
+    "answer": "B",
+    "explanation": "Harga setelah naik 25% = 800.000×1,25 = 1.000.000. Setelah diskon 20% = 1.000.000×0,8 = Rp800.000."
+  },
+  {
+    "id": "numerical-3-005",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Sebuah produk dijual seharga Rp360.000 setelah mendapat diskon 10%. Berapa harga awal produk tersebut?",
+    "options": [
+      { "id": "A", "text": "Rp390.000" },
+      { "id": "B", "text": "Rp400.000" },
+      { "id": "C", "text": "Rp410.000" },
+      { "id": "D", "text": "Rp420.000" }
+    ],
+    "answer": "B",
+    "explanation": "Harga setelah diskon 10% berarti 90% dari harga awal. Harga awal = 360.000÷0,9 = Rp400.000."
+  },
+  {
+    "id": "numerical-3-006",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "A dapat menyelesaikan pekerjaan dalam 12 hari, sedangkan B dapat menyelesaikan pekerjaan yang sama dalam 18 hari. Jika A dan B bekerja bersama selama 4 hari, lalu A berhenti, berapa hari tambahan yang dibutuhkan B untuk menyelesaikan sisanya?",
+    "options": [
+      { "id": "A", "text": "6 hari" },
+      { "id": "B", "text": "8 hari" },
+      { "id": "C", "text": "10 hari" },
+      { "id": "D", "text": "12 hari" }
+    ],
+    "answer": "B",
+    "explanation": "A per hari menyelesaikan 1/12, B 1/18. Bersama per hari = 5/36. Selama 4 hari selesai 20/36 = 5/9. Sisa = 4/9. B menyelesaikan 1/18 per hari, jadi waktu = (4/9) ÷ (1/18) = 8 hari."
+  },
+  {
+    "id": "numerical-3-007",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Sebuah kendaraan menempuh jarak yang sama dua kali. Perjalanan pertama ditempuh dengan kecepatan 60 km/jam, perjalanan kedua dengan kecepatan 90 km/jam. Berapa kecepatan rata-rata keseluruhan?",
+    "options": [
+      { "id": "A", "text": "70 km/jam" },
+      { "id": "B", "text": "72 km/jam" },
+      { "id": "C", "text": "75 km/jam" },
+      { "id": "D", "text": "78 km/jam" }
+    ],
+    "answer": "B",
+    "explanation": "Untuk jarak yang sama, kecepatan rata-rata = 2ab/(a+b). Jadi 2×60×90/(60+90) = 10800/150 = 72 km/jam."
+  },
+  {
+    "id": "numerical-3-008",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perbandingan modal Andi dan Budi adalah 5 : 7. Setelah Andi menambah modal Rp400.000 dan Budi menambah modal Rp200.000, perbandingannya menjadi 7 : 8. Berapa modal awal Andi?",
+    "options": [
+      { "id": "A", "text": "Rp1.000.000" },
+      { "id": "B", "text": "Rp1.200.000" },
+      { "id": "C", "text": "Rp1.400.000" },
+      { "id": "D", "text": "Rp1.600.000" }
+    ],
+    "answer": "A",
+    "explanation": "Misal modal awal Andi=5x dan Budi=7x. Setelah penambahan: (5x+400.000)/(7x+200.000)=7/8. Maka 8(5x+400.000)=7(7x+200.000), 40x+3.200.000=49x+1.400.000, sehingga 9x=1.800.000 dan x=200.000. Modal Andi=5x=Rp1.000.000."
+  },
+  {
+    "id": "numerical-3-009",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Larutan 20 liter mengandung gula 30%. Berapa liter air yang harus ditambahkan agar kadar gula menjadi 24%?",
+    "options": [
+      { "id": "A", "text": "3 liter" },
+      { "id": "B", "text": "4 liter" },
+      { "id": "C", "text": "5 liter" },
+      { "id": "D", "text": "6 liter" }
+    ],
+    "answer": "C",
+    "explanation": "Jumlah gula = 30%×20 = 6 liter. Agar kadar menjadi 24%, total larutan harus 6÷0,24 = 25 liter. Air yang ditambahkan = 25-20 = 5 liter."
+  },
+  {
+    "id": "numerical-3-010",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Harga 3 buku dan 2 pulpen adalah Rp46.000. Harga 2 buku dan 5 pulpen adalah Rp49.000. Berapa harga 1 buku?",
+    "options": [
+      { "id": "A", "text": "Rp8.000" },
+      { "id": "B", "text": "Rp9.000" },
+      { "id": "C", "text": "Rp10.000" },
+      { "id": "D", "text": "Rp12.000" }
+    ],
+    "answer": "D",
+    "explanation": "Misal buku=b dan pulpen=p. 3b+2p=46.000 dan 2b+5p=49.000. Kalikan persamaan pertama 5: 15b+10p=230.000. Kalikan persamaan kedua 2: 4b+10p=98.000. Selisih: 11b=132.000, maka b=12.000."
+  },
+  {
+    "id": "numerical-3-011",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Sebuah tim menyelesaikan 40% pekerjaan dalam 8 hari. Jika kecepatan kerja tetap, berapa hari lagi yang dibutuhkan untuk menyelesaikan seluruh pekerjaan?",
+    "options": [
+      { "id": "A", "text": "10 hari" },
+      { "id": "B", "text": "12 hari" },
+      { "id": "C", "text": "14 hari" },
+      { "id": "D", "text": "16 hari" }
+    ],
+    "answer": "B",
+    "explanation": "40% selesai dalam 8 hari, berarti 10% selesai dalam 2 hari. Sisa pekerjaan 60%, maka waktu tambahan = 6×2 = 12 hari."
+  },
+  {
+    "id": "numerical-3-012",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Sebuah perusahaan memiliki 240 pegawai. Sebanyak 30% bekerja di administrasi, 25% di operasional, dan sisanya di pemasaran. Jika 1/3 pegawai pemasaran dipindahkan ke operasional, berapa pegawai operasional setelah pemindahan?",
+    "options": [
+      { "id": "A", "text": "84" },
+      { "id": "B", "text": "92" },
+      { "id": "C", "text": "96" },
+      { "id": "D", "text": "100" }
+    ],
+    "answer": "C",
+    "explanation": "Administrasi = 30%×240 = 72. Operasional awal = 25%×240 = 60. Pemasaran = 240-72-60 = 108. Sepertiga pemasaran = 36 dipindah ke operasional. Operasional baru = 60+36 = 96."
+  },
+  {
+    "id": "numerical-3-013",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Data penjualan tiga produk selama satu bulan: Produk A = 120 unit, Produk B = 150 unit, Produk C = 180 unit. Jika bulan berikutnya A naik 25%, B turun 20%, dan C tetap, berapa total penjualan bulan berikutnya?",
+    "options": [
+      { "id": "A", "text": "430 unit" },
+      { "id": "B", "text": "440 unit" },
+      { "id": "C", "text": "450 unit" },
+      { "id": "D", "text": "460 unit" }
+    ],
+    "answer": "C",
+    "explanation": "A baru = 120×1,25 = 150. B baru = 150×0,8 = 120. C tetap = 180. Total = 150+120+180 = 450 unit."
+  },
+  {
+    "id": "numerical-3-014",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Jika 40% dari X sama dengan 25% dari Y, dan X + Y = 260, maka nilai X adalah ...",
+    "options": [
+      { "id": "A", "text": "90" },
+      { "id": "B", "text": "100" },
+      { "id": "C", "text": "110" },
+      { "id": "D", "text": "120" }
+    ],
+    "answer": "B",
+    "explanation": "0,4X = 0,25Y, maka Y = 1,6X. X + Y = 260, jadi X + 1,6X = 260. 2,6X = 260, maka X = 100."
+  },
+  {
+    "id": "numerical-3-015",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Usia Ayah tiga kali usia anaknya. Enam tahun lagi, usia Ayah menjadi dua kali usia anaknya. Berapa usia anak sekarang?",
+    "options": [
+      { "id": "A", "text": "6 tahun" },
+      { "id": "B", "text": "8 tahun" },
+      { "id": "C", "text": "10 tahun" },
+      { "id": "D", "text": "12 tahun" }
+    ],
+    "answer": "A",
+    "explanation": "Misal usia anak sekarang x, usia Ayah 3x. Enam tahun lagi: 3x+6 = 2(x+6). Maka 3x+6 = 2x+12, sehingga x = 6."
+  },
+  {
+    "id": "numerical-3-016",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Sebuah mesin lama menghasilkan 80 unit per jam. Mesin baru 25% lebih cepat dari mesin lama. Jika kedua mesin bekerja bersama selama 4 jam, berapa total unit yang dihasilkan?",
+    "options": [
+      { "id": "A", "text": "640 unit" },
+      { "id": "B", "text": "680 unit" },
+      { "id": "C", "text": "720 unit" },
+      { "id": "D", "text": "760 unit" }
+    ],
+    "answer": "C",
+    "explanation": "Mesin baru = 80×1,25 = 100 unit/jam. Total produksi per jam = 80+100 = 180 unit. Dalam 4 jam = 180×4 = 720 unit."
+  },
+  {
+    "id": "numerical-3-017",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Dalam sebuah rapat, 60% peserta adalah pria. Setelah 10 pria keluar dan 10 wanita masuk, jumlah pria dan wanita menjadi sama. Berapa jumlah peserta awal?",
+    "options": [
+      { "id": "A", "text": "80" },
+      { "id": "B", "text": "90" },
+      { "id": "C", "text": "100" },
+      { "id": "D", "text": "120" }
+    ],
+    "answer": "C",
+    "explanation": "Misal jumlah awal N. Pria awal 0,6N dan wanita 0,4N. Setelah perubahan: pria = 0,6N-10, wanita = 0,4N+10. Sama, maka 0,6N-10 = 0,4N+10. 0,2N = 20, jadi N = 100."
+  },
+  {
+    "id": "numerical-3-018",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Sebuah toko memberi diskon 15% untuk barang pertama dan 25% untuk barang kedua. Harga awal barang pertama Rp400.000 dan barang kedua Rp600.000. Berapa total pembayaran setelah diskon?",
+    "options": [
+      { "id": "A", "text": "Rp760.000" },
+      { "id": "B", "text": "Rp780.000" },
+      { "id": "C", "text": "Rp790.000" },
+      { "id": "D", "text": "Rp800.000" }
+    ],
+    "answer": "C",
+    "explanation": "Barang pertama = 400.000×0,85 = 340.000. Barang kedua = 600.000×0,75 = 450.000. Total = 340.000+450.000 = Rp790.000."
+  },
+  {
+    "id": "numerical-3-019",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Sebuah investasi naik 20% pada tahun pertama, turun 10% pada tahun kedua, lalu naik 25% pada tahun ketiga. Jika modal awal Rp10.000.000, berapa nilai akhirnya?",
+    "options": [
+      { "id": "A", "text": "Rp12.500.000" },
+      { "id": "B", "text": "Rp13.000.000" },
+      { "id": "C", "text": "Rp13.500.000" },
+      { "id": "D", "text": "Rp14.000.000" }
+    ],
+    "answer": "C",
+    "explanation": "Tahun 1: 10.000.000×1,2 = 12.000.000. Tahun 2: 12.000.000×0,9 = 10.800.000. Tahun 3: 10.800.000×1,25 = Rp13.500.000."
+  },
+  {
+    "id": "numerical-3-020",
+    "category": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Sebuah proyek memiliki anggaran Rp120.000.000. Sebanyak 35% digunakan untuk material, 30% untuk tenaga kerja, 15% untuk operasional, dan sisanya untuk cadangan. Jika 25% dari dana cadangan akhirnya dipakai, berapa sisa dana cadangan?",
+    "options": [
+      { "id": "A", "text": "Rp15.000.000" },
+      { "id": "B", "text": "Rp18.000.000" },
+      { "id": "C", "text": "Rp20.000.000" },
+      { "id": "D", "text": "Rp24.000.000" }
+    ],
+    "answer": "B",
+    "explanation": "Total penggunaan awal = 35%+30%+15% = 80%, maka cadangan = 20%×120.000.000 = 24.000.000. Dipakai 25%, sisa 75%×24.000.000 = Rp18.000.000."
+  }
+]

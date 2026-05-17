@@ -1,0 +1,336 @@
+/* =========================================
+   SIMULASI PSIKOTES GRATIS — admin.css
+   Admin page styles
+   ========================================= */
+
+/* --- Admin Layout --- */
+.admin-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 2rem 0;
+}
+
+.admin-sidebar {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 80px;
+}
+
+.admin-sidebar h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-nav { list-style: none; }
+
+.sidebar-nav li a {
+  display: block;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--text);
+  transition: background 0.15s;
+}
+
+.sidebar-nav li a:hover { background: #f0f3f8; text-decoration: none; }
+.sidebar-nav li a.active { background: var(--primary); color: #fff; }
+
+.admin-main { min-width: 0; }
+
+/* --- Admin Card --- */
+.admin-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+
+.admin-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* --- Form Elements --- */
+.form-group {
+  margin-bottom: 1.1rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.form-label .required { color: var(--danger); margin-left: 0.2rem; }
+
+.form-control {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-family: var(--font, inherit);
+  color: var(--text);
+  background: #fff;
+  transition: border-color 0.15s;
+  outline: none;
+}
+
+.form-control:focus { border-color: var(--secondary); }
+
+.form-control.error { border-color: var(--danger); }
+
+textarea.form-control {
+  min-height: 90px;
+  resize: vertical;
+}
+
+select.form-control { cursor: pointer; }
+
+.form-hint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* --- Checkbox / Radio group --- */
+.check-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.check-group input { accent-color: var(--primary); }
+
+/* --- Option editor --- */
+.options-editor { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.option-row .option-id {
+  width: 32px;
+  height: 32px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.option-row .form-control { flex: 1; }
+
+.correct-radio { flex-shrink: 0; }
+
+/* --- Preview Panel --- */
+.preview-panel {
+  background: #f8f9fb;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-top: 1rem;
+}
+
+.preview-panel h4 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.preview-empty {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* --- JSON Output Area --- */
+.json-output-wrapper { position: relative; }
+
+.json-output {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.82rem;
+  background: #1e2a3a;
+  color: #a8d8a8;
+  border: 1px solid #2e3e52;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 120px;
+  max-height: 320px;
+  overflow-y: auto;
+  white-space: pre;
+  word-break: break-all;
+  resize: vertical;
+  outline: none;
+}
+
+.json-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* --- Token Warning --- */
+.token-warning {
+  background: #fff8e8;
+  border: 1px solid var(--warning);
+  border-left: 4px solid var(--warning);
+  border-radius: 8px;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.88rem;
+  color: #7a5500;
+  margin-bottom: 1rem;
+}
+
+.token-warning strong { color: #5a3d00; }
+
+.token-input-wrap {
+  position: relative;
+}
+
+.token-input-wrap .form-control { padding-right: 2.5rem; font-family: monospace; }
+
+.token-toggle {
+  position: absolute;
+  right: 0.65rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+/* --- GitHub config section --- */
+.github-config-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+/* --- Status message --- */
+.status-msg {
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  margin-top: 0.75rem;
+}
+
+.status-msg.success { background: #d9f3e6; color: #1e5a38; }
+.status-msg.error   { background: #fdeaea; color: #8c2020; }
+.status-msg.info    { background: #e8f4fd; color: #145a75; }
+.status-msg.loading { background: #f0f3f8; color: var(--text-muted); }
+
+/* --- Question list in admin --- */
+.q-list { list-style: none; }
+
+.q-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  background: #fff;
+  font-size: 0.88rem;
+}
+
+.q-list-item .q-index {
+  width: 28px;
+  height: 28px;
+  background: #f0f3f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.q-list-item .q-text { flex: 1; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.q-list-item .q-meta { color: var(--text-muted); font-size: 0.78rem; flex-shrink: 0; }
+
+/* --- Tabs (admin sections) --- */
+.admin-tabs {
+  display: flex;
+  gap: 0.25rem;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.admin-tab-btn {
+  padding: 0.55rem 1.1rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.admin-tab-btn:hover { color: var(--primary); }
+.admin-tab-btn.active { color: var(--primary); border-bottom-color: var(--primary); }
+
+.admin-tab-panel { display: none; }
+.admin-tab-panel.active { display: block; }
+
+/* --- Responsive Admin --- */
+@media (max-width: 900px) {
+  .admin-layout { grid-template-columns: 1fr; }
+  .admin-sidebar { position: static; }
+  .github-config-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .admin-card { padding: 1rem; }
+  .json-actions { flex-direction: column; }
+}

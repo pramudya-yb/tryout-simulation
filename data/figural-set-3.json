@@ -1,0 +1,780 @@
+[
+  {
+    "id": "figural-3-001",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan pola pada matriks berikut. Bentuk yang tepat untuk melengkapi kotak kosong adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Matriks Figural 1",
+      "instruction": "Setiap baris mengikuti urutan bentuk yang sama, sedangkan setiap baris memiliki pola isi berbeda.",
+      "grid": [
+        [
+          { "shape": "circle", "fill": true },
+          { "shape": "square", "fill": true },
+          { "shape": "triangle", "fill": true }
+        ],
+        [
+          { "shape": "circle", "fill": false },
+          { "shape": "square", "fill": false },
+          { "shape": "triangle", "fill": false }
+        ],
+        [
+          { "shape": "circle", "fill": true },
+          { "shape": "square", "fill": true },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "shape": "triangle", "fill": true },
+        { "id": "B", "shape": "triangle", "fill": false },
+        { "id": "C", "shape": "square", "fill": true },
+        { "id": "D", "shape": "circle", "fill": true }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Baris pertama berisi bentuk penuh, baris kedua bentuk kosong, dan baris ketiga kembali bentuk penuh. Urutan bentuk setiap baris adalah lingkaran, persegi, segitiga. Jadi kotak kosong adalah segitiga penuh."
+  },
+  {
+    "id": "figural-3-002",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan hubungan bentuk dan titik pada matriks. Pilihan yang tepat adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Matriks Figural 2",
+      "instruction": "Bentuk berubah menurut kolom, sedangkan posisi titik berubah menurut baris.",
+      "grid": [
+        [
+          { "shape": "circle", "fill": false, "dot": { "x": 36, "y": 20 } },
+          { "shape": "square", "fill": false, "dot": { "x": 36, "y": 20 } },
+          { "shape": "triangle", "fill": false, "dot": { "x": 36, "y": 20 } }
+        ],
+        [
+          { "shape": "circle", "fill": false, "dot": { "x": 52, "y": 36 } },
+          { "shape": "square", "fill": false, "dot": { "x": 52, "y": 36 } },
+          { "shape": "triangle", "fill": false, "dot": { "x": 52, "y": 36 } }
+        ],
+        [
+          { "shape": "circle", "fill": false, "dot": { "x": 36, "y": 52 } },
+          { "shape": "square", "fill": false, "dot": { "x": 36, "y": 52 } },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "shape": "triangle", "fill": false, "dot": { "x": 36, "y": 52 } },
+        { "id": "B", "shape": "triangle", "fill": false, "dot": { "x": 52, "y": 36 } },
+        { "id": "C", "shape": "circle", "fill": false, "dot": { "x": 36, "y": 52 } },
+        { "id": "D", "shape": "square", "fill": false, "dot": { "x": 20, "y": 36 } }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Kolom selalu berurutan lingkaran, persegi, segitiga. Baris pertama titik di atas, baris kedua di kanan, baris ketiga di bawah. Jadi kotak kosong adalah segitiga dengan titik di bawah."
+  },
+  {
+    "id": "figural-3-003",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan rotasi panah pada matriks. Bentuk yang tepat adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Matriks Figural 3",
+      "instruction": "Arah panah berputar 90 derajat ke kanan pada setiap kolom.",
+      "grid": [
+        [
+          { "shape": "arrow", "rotate": 0 },
+          { "shape": "arrow", "rotate": 90 },
+          { "shape": "arrow", "rotate": 180 }
+        ],
+        [
+          { "shape": "arrow", "rotate": 90 },
+          { "shape": "arrow", "rotate": 180 },
+          { "shape": "arrow", "rotate": 270 }
+        ],
+        [
+          { "shape": "arrow", "rotate": 180 },
+          { "shape": "arrow", "rotate": 270 },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "shape": "arrow", "rotate": 0 },
+        { "id": "B", "shape": "arrow", "rotate": 90 },
+        { "id": "C", "shape": "arrow", "rotate": 180 },
+        { "id": "D", "shape": "arrow", "rotate": 270 }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Setiap langkah ke kanan panah berputar 90 derajat. Baris ketiga adalah bawah, kiri, lalu atas. Jadi jawabannya panah atas."
+  },
+  {
+    "id": "figural-3-004",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan pola isi pada matriks. Bentuk yang tepat untuk melengkapi kotak kosong adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Matriks Figural 4",
+      "instruction": "Setiap baris mengikuti pola penuh, kosong, penuh; bentuk dasar berubah menurut baris.",
+      "grid": [
+        [
+          { "shape": "circle", "fill": true },
+          { "shape": "circle", "fill": false },
+          { "shape": "circle", "fill": true }
+        ],
+        [
+          { "shape": "square", "fill": true },
+          { "shape": "square", "fill": false },
+          { "shape": "square", "fill": true }
+        ],
+        [
+          { "shape": "diamond", "fill": true },
+          { "shape": "diamond", "fill": false },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "shape": "diamond", "fill": true },
+        { "id": "B", "shape": "diamond", "fill": false },
+        { "id": "C", "shape": "square", "fill": true },
+        { "id": "D", "shape": "circle", "fill": false }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Setiap baris memiliki bentuk yang sama dan mengikuti isi penuh, kosong, penuh. Baris ketiga adalah belah ketupat penuh, kosong, lalu penuh."
+  },
+  {
+    "id": "figural-3-005",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan gabungan dua aturan dalam matriks. Pilihan yang benar adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Matriks Figural 5",
+      "instruction": "Bentuk berubah dari kiri ke kanan, sedangkan jumlah titik bertambah dari atas ke bawah.",
+      "grid": [
+        [
+          { "shape": "circle", "fill": false, "dot": { "x": 36, "y": 36 } },
+          { "shape": "square", "fill": false, "dot": { "x": 36, "y": 36 } },
+          { "shape": "triangle", "fill": false, "dot": { "x": 36, "y": 36 } }
+        ],
+        [
+          { "shape": "circle", "fill": false, "dots": [{ "x": 28, "y": 36 }, { "x": 44, "y": 36 }] },
+          { "shape": "square", "fill": false, "dots": [{ "x": 28, "y": 36 }, { "x": 44, "y": 36 }] },
+          { "shape": "triangle", "fill": false, "dots": [{ "x": 28, "y": 36 }, { "x": 44, "y": 36 }] }
+        ],
+        [
+          { "shape": "circle", "fill": false, "dots": [{ "x": 26, "y": 34 }, { "x": 46, "y": 34 }, { "x": 36, "y": 48 }] },
+          { "shape": "square", "fill": false, "dots": [{ "x": 26, "y": 34 }, { "x": 46, "y": 34 }, { "x": 36, "y": 48 }] },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "shape": "triangle", "fill": false, "dots": [{ "x": 26, "y": 34 }, { "x": 46, "y": 34 }, { "x": 36, "y": 48 }] },
+        { "id": "B", "shape": "triangle", "fill": false, "dot": { "x": 36, "y": 36 } },
+        { "id": "C", "shape": "square", "fill": false, "dots": [{ "x": 26, "y": 34 }, { "x": 46, "y": 34 }, { "x": 36, "y": 48 }] },
+        { "id": "D", "shape": "circle", "fill": false, "dots": [{ "x": 28, "y": 36 }, { "x": 44, "y": 36 }] }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Kolom ketiga harus berbentuk segitiga. Baris ketiga harus memiliki tiga titik. Jadi jawabannya segitiga kosong dengan tiga titik."
+  },
+  {
+    "id": "figural-3-006",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan pola rotasi bagian gelap. Bentuk yang hilang adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Matriks Figural 6",
+      "instruction": "Setiap langkah ke kanan rotasi bertambah 90 derajat, dan setiap baris dimulai dari rotasi berbeda.",
+      "grid": [
+        [
+          { "shape": "half-circle", "rotate": 0 },
+          { "shape": "half-circle", "rotate": 90 },
+          { "shape": "half-circle", "rotate": 180 }
+        ],
+        [
+          { "shape": "half-circle", "rotate": 90 },
+          { "shape": "half-circle", "rotate": 180 },
+          { "shape": "half-circle", "rotate": 270 }
+        ],
+        [
+          { "shape": "half-circle", "rotate": 180 },
+          { "shape": "half-circle", "rotate": 270 },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "shape": "half-circle", "rotate": 0 },
+        { "id": "B", "shape": "half-circle", "rotate": 90 },
+        { "id": "C", "shape": "half-circle", "rotate": 180 },
+        { "id": "D", "shape": "half-circle", "rotate": 270 }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Baris ketiga mengikuti 180, 270, lalu kembali ke 0 derajat."
+  },
+  {
+    "id": "figural-3-007",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan hubungan isi bentuk pada baris dan kolom. Jawaban yang tepat adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Matriks Figural 7",
+      "instruction": "Bentuk pada kolom ketiga merupakan gabungan pola dari dua kolom sebelumnya.",
+      "grid": [
+        [
+          { "shape": "circle", "fill": true },
+          { "shape": "circle", "fill": false },
+          { "shape": "circle", "fill": true }
+        ],
+        [
+          { "shape": "square", "fill": false },
+          { "shape": "square", "fill": true },
+          { "shape": "square", "fill": true }
+        ],
+        [
+          { "shape": "triangle", "fill": true },
+          { "shape": "triangle", "fill": false },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "shape": "triangle", "fill": true },
+        { "id": "B", "shape": "triangle", "fill": false },
+        { "id": "C", "shape": "square", "fill": false },
+        { "id": "D", "shape": "circle", "fill": true }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Pada baris pertama dan ketiga, kolom pertama penuh dan kolom kedua kosong, hasil pada kolom ketiga tetap penuh. Jadi kotak kosong adalah segitiga penuh."
+  },
+  {
+    "id": "figural-3-008",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan pola bentuk dan garis. Bentuk yang tepat adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Matriks Figural 8",
+      "instruction": "Bentuk dasar berubah menurut baris, sedangkan tanda di dalam bentuk berubah menurut kolom.",
+      "grid": [
+        [
+          { "parts": [{ "shape": "circle", "fill": false }, { "shape": "line", "x1": 18, "y1": 36, "x2": 54, "y2": 36 }] },
+          { "parts": [{ "shape": "circle", "fill": false }, { "shape": "plus" }] },
+          { "parts": [{ "shape": "circle", "fill": false }, { "shape": "cross" }] }
+        ],
+        [
+          { "parts": [{ "shape": "square", "fill": false }, { "shape": "line", "x1": 18, "y1": 36, "x2": 54, "y2": 36 }] },
+          { "parts": [{ "shape": "square", "fill": false }, { "shape": "plus" }] },
+          { "parts": [{ "shape": "square", "fill": false }, { "shape": "cross" }] }
+        ],
+        [
+          { "parts": [{ "shape": "diamond", "fill": false }, { "shape": "line", "x1": 18, "y1": 36, "x2": 54, "y2": 36 }] },
+          { "parts": [{ "shape": "diamond", "fill": false }, { "shape": "plus" }] },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "parts": [{ "shape": "diamond", "fill": false }, { "shape": "cross" }] },
+        { "id": "B", "parts": [{ "shape": "diamond", "fill": false }, { "shape": "plus" }] },
+        { "id": "C", "parts": [{ "shape": "square", "fill": false }, { "shape": "cross" }] },
+        { "id": "D", "parts": [{ "shape": "circle", "fill": false }, { "shape": "cross" }] }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Baris ketiga menggunakan belah ketupat. Kolom ketiga selalu berisi tanda silang. Jadi kotak kosong adalah belah ketupat dengan tanda silang."
+  },
+  {
+    "id": "figural-3-009",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan pola titik yang bergerak dalam matriks. Jawaban yang benar adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Matriks Figural 9",
+      "instruction": "Titik bergerak ke kanan pada setiap kolom dan bergerak turun pada setiap baris.",
+      "grid": [
+        [
+          { "shape": "circle", "fill": false, "dot": { "x": 20, "y": 20 } },
+          { "shape": "circle", "fill": false, "dot": { "x": 36, "y": 20 } },
+          { "shape": "circle", "fill": false, "dot": { "x": 52, "y": 20 } }
+        ],
+        [
+          { "shape": "circle", "fill": false, "dot": { "x": 20, "y": 36 } },
+          { "shape": "circle", "fill": false, "dot": { "x": 36, "y": 36 } },
+          { "shape": "circle", "fill": false, "dot": { "x": 52, "y": 36 } }
+        ],
+        [
+          { "shape": "circle", "fill": false, "dot": { "x": 20, "y": 52 } },
+          { "shape": "circle", "fill": false, "dot": { "x": 36, "y": 52 } },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "shape": "circle", "fill": false, "dot": { "x": 52, "y": 52 } },
+        { "id": "B", "shape": "circle", "fill": false, "dot": { "x": 20, "y": 52 } },
+        { "id": "C", "shape": "circle", "fill": false, "dot": { "x": 52, "y": 20 } },
+        { "id": "D", "shape": "circle", "fill": false, "dot": { "x": 36, "y": 36 } }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Kolom ketiga memiliki titik di sisi kanan. Baris ketiga memiliki titik di bawah. Jadi titik harus berada di kanan bawah."
+  },
+  {
+    "id": "figural-3-010",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan jumlah titik pada matriks. Isi kotak kosong yang benar adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Matriks Figural 10",
+      "instruction": "Jumlah titik bertambah satu dari kiri ke kanan dan bertambah satu dari atas ke bawah.",
+      "grid": [
+        [
+          { "shape": "dots", "count": 1 },
+          { "shape": "dots", "count": 2 },
+          { "shape": "dots", "count": 3 }
+        ],
+        [
+          { "shape": "dots", "count": 2 },
+          { "shape": "dots", "count": 3 },
+          { "shape": "dots", "count": 4 }
+        ],
+        [
+          { "shape": "dots", "count": 3 },
+          { "shape": "dots", "count": 4 },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "shape": "dots", "count": 4 },
+        { "id": "B", "shape": "dots", "count": 5 },
+        { "id": "C", "shape": "dots", "count": 6 },
+        { "id": "D", "shape": "dots", "count": 3 }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "B",
+    "explanation": "Baris ketiga adalah 3, 4, maka berikutnya 5. Kolom ketiga juga 3, 4, maka berikutnya 5."
+  },
+  {
+    "id": "figural-3-011",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan pola urutan ganda berikut. Bentuk selanjutnya adalah ...",
+    "stimulus": {
+      "type": "sequence",
+      "title": "Sequence Sulit 1",
+      "instruction": "Bentuk mengikuti siklus tiga bentuk, sedangkan isi berganti penuh dan kosong.",
+      "items": [
+        { "shape": "circle", "fill": true },
+        { "shape": "square", "fill": false },
+        { "shape": "triangle", "fill": true },
+        { "shape": "circle", "fill": false },
+        { "shape": "square", "fill": true },
+        { "shape": "triangle", "fill": false },
+        { "unknown": true }
+      ],
+      "options": [
+        { "id": "A", "shape": "circle", "fill": true },
+        { "id": "B", "shape": "circle", "fill": false },
+        { "id": "C", "shape": "square", "fill": false },
+        { "id": "D", "shape": "triangle", "fill": true }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Bentuk berulang lingkaran, persegi, segitiga. Isi bergantian penuh dan kosong. Setelah segitiga kosong, kembali ke lingkaran penuh."
+  },
+  {
+    "id": "figural-3-012",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan gerakan titik dan perubahan bentuk. Pilihan yang tepat adalah ...",
+    "stimulus": {
+      "type": "sequence",
+      "title": "Sequence Sulit 2",
+      "instruction": "Bentuk berganti lingkaran dan persegi, titik bergerak searah jarum jam.",
+      "items": [
+        { "shape": "circle", "fill": false, "dot": { "x": 36, "y": 20 } },
+        { "shape": "square", "fill": false, "dot": { "x": 52, "y": 36 } },
+        { "shape": "circle", "fill": false, "dot": { "x": 36, "y": 52 } },
+        { "shape": "square", "fill": false, "dot": { "x": 20, "y": 36 } },
+        { "shape": "circle", "fill": false, "dot": { "x": 36, "y": 20 } },
+        { "unknown": true }
+      ],
+      "options": [
+        { "id": "A", "shape": "square", "fill": false, "dot": { "x": 52, "y": 36 } },
+        { "id": "B", "shape": "circle", "fill": false, "dot": { "x": 52, "y": 36 } },
+        { "id": "C", "shape": "square", "fill": false, "dot": { "x": 36, "y": 52 } },
+        { "id": "D", "shape": "diamond", "fill": false, "dot": { "x": 52, "y": 36 } }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Bentuk berganti lingkaran dan persegi. Setelah lingkaran, berikutnya persegi. Titik setelah posisi atas bergerak ke kanan."
+  },
+  {
+    "id": "figural-3-013",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan pola rotasi dan jenis bentuk. Bentuk selanjutnya adalah ...",
+    "stimulus": {
+      "type": "sequence",
+      "title": "Sequence Sulit 3",
+      "instruction": "Panah berputar 90 derajat, kemudian diselingi setengah lingkaran dengan rotasi yang sama.",
+      "items": [
+        { "shape": "arrow", "rotate": 0 },
+        { "shape": "half-circle", "rotate": 0 },
+        { "shape": "arrow", "rotate": 90 },
+        { "shape": "half-circle", "rotate": 90 },
+        { "shape": "arrow", "rotate": 180 },
+        { "unknown": true }
+      ],
+      "options": [
+        { "id": "A", "shape": "half-circle", "rotate": 180 },
+        { "id": "B", "shape": "half-circle", "rotate": 90 },
+        { "id": "C", "shape": "arrow", "rotate": 270 },
+        { "id": "D", "shape": "half-circle", "rotate": 270 }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Setiap arah muncul berpasangan: panah lalu setengah lingkaran dengan rotasi yang sama. Setelah panah 180 derajat, berikutnya setengah lingkaran 180 derajat."
+  },
+  {
+    "id": "figural-3-014",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan pola jumlah titik yang diselingi bentuk. Pilihan yang tepat adalah ...",
+    "stimulus": {
+      "type": "sequence",
+      "title": "Sequence Sulit 4",
+      "instruction": "Jumlah titik bertambah dua, dan setiap jumlah titik dipisahkan oleh bentuk kosong yang berganti.",
+      "items": [
+        { "shape": "dots", "count": 2 },
+        { "shape": "circle", "fill": false },
+        { "shape": "dots", "count": 4 },
+        { "shape": "square", "fill": false },
+        { "shape": "dots", "count": 6 },
+        { "shape": "triangle", "fill": false },
+        { "unknown": true }
+      ],
+      "options": [
+        { "id": "A", "shape": "dots", "count": 7 },
+        { "id": "B", "shape": "dots", "count": 8 },
+        { "id": "C", "shape": "diamond", "fill": false },
+        { "id": "D", "shape": "dots", "count": 6 }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "B",
+    "explanation": "Jumlah titik mengikuti 2, 4, 6, sehingga berikutnya 8. Bentuk kosong hanya menjadi pemisah."
+  },
+  {
+    "id": "figural-3-015",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Manakah bentuk yang berbeda dari kelompok berikut?",
+    "stimulus": {
+      "type": "odd-one-out",
+      "title": "Odd One Out Sulit 1",
+      "instruction": "Perhatikan kesesuaian bentuk luar dan tanda di dalamnya.",
+      "items": [
+        { "parts": [{ "shape": "circle", "fill": false }, { "shape": "plus" }] },
+        { "parts": [{ "shape": "square", "fill": false }, { "shape": "plus" }] },
+        { "parts": [{ "shape": "diamond", "fill": false }, { "shape": "plus" }] },
+        { "parts": [{ "shape": "triangle", "fill": false }, { "shape": "cross" }] }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Bentuk pertama" },
+      { "id": "B", "text": "Bentuk kedua" },
+      { "id": "C", "text": "Bentuk ketiga" },
+      { "id": "D", "text": "Bentuk keempat" }
+    ],
+    "answer": "D",
+    "explanation": "Tiga bentuk pertama memiliki tanda plus di dalamnya, sedangkan bentuk keempat memiliki tanda silang."
+  },
+  {
+    "id": "figural-3-016",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Manakah bentuk yang tidak mengikuti pola kelompok?",
+    "stimulus": {
+      "type": "odd-one-out",
+      "title": "Odd One Out Sulit 2",
+      "instruction": "Perhatikan arah panah dan posisi titik.",
+      "items": [
+        { "shape": "arrow", "rotate": 90, "dot": { "x": 52, "y": 36 } },
+        { "shape": "arrow", "rotate": 180, "dot": { "x": 36, "y": 52 } },
+        { "shape": "arrow", "rotate": 270, "dot": { "x": 20, "y": 36 } },
+        { "shape": "arrow", "rotate": 0, "dot": { "x": 36, "y": 52 } }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Bentuk pertama" },
+      { "id": "B", "text": "Bentuk kedua" },
+      { "id": "C", "text": "Bentuk ketiga" },
+      { "id": "D", "text": "Bentuk keempat" }
+    ],
+    "answer": "D",
+    "explanation": "Pada tiga bentuk pertama, titik berada searah dengan arah panah. Bentuk keempat panah mengarah atas, tetapi titik berada di bawah."
+  },
+  {
+    "id": "figural-3-017",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan analogi visual berikut. Bentuk yang tepat untuk melengkapi hubungan adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Analogi Visual 1",
+      "instruction": "Hubungan baris pertama berlaku juga pada baris kedua.",
+      "grid": [
+        [
+          { "shape": "circle", "fill": true },
+          { "shape": "circle", "fill": false }
+        ],
+        [
+          { "shape": "square", "fill": true },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "shape": "square", "fill": false },
+        { "id": "B", "shape": "square", "fill": true },
+        { "id": "C", "shape": "circle", "fill": false },
+        { "id": "D", "shape": "triangle", "fill": false }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Pada baris pertama, bentuk tetap tetapi isi berubah dari penuh menjadi kosong. Maka persegi penuh berubah menjadi persegi kosong."
+  },
+  {
+    "id": "figural-3-018",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan analogi arah berikut. Pilihan yang benar adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Analogi Visual 2",
+      "instruction": "Hubungan perubahan arah pada baris pertama diterapkan pada baris kedua.",
+      "grid": [
+        [
+          { "shape": "arrow", "rotate": 0 },
+          { "shape": "arrow", "rotate": 180 }
+        ],
+        [
+          { "shape": "arrow", "rotate": 90 },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "shape": "arrow", "rotate": 0 },
+        { "id": "B", "shape": "arrow", "rotate": 90 },
+        { "id": "C", "shape": "arrow", "rotate": 180 },
+        { "id": "D", "shape": "arrow", "rotate": 270 }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "D",
+    "explanation": "Baris pertama menunjukkan perubahan 180 derajat. Jika panah kanan diputar 180 derajat, hasilnya panah kiri."
+  },
+  {
+    "id": "figural-3-019",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan matriks kombinasi bentuk luar dan bentuk dalam. Pilihan yang tepat adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Matriks Figural 11",
+      "instruction": "Bentuk luar berubah menurut baris, sedangkan bentuk dalam berubah menurut kolom.",
+      "grid": [
+        [
+          { "parts": [{ "shape": "circle", "fill": false }, { "shape": "dots", "count": 1, "r": 5 }] },
+          { "parts": [{ "shape": "circle", "fill": false }, { "shape": "plus" }] },
+          { "parts": [{ "shape": "circle", "fill": false }, { "shape": "cross" }] }
+        ],
+        [
+          { "parts": [{ "shape": "square", "fill": false }, { "shape": "dots", "count": 1, "r": 5 }] },
+          { "parts": [{ "shape": "square", "fill": false }, { "shape": "plus" }] },
+          { "parts": [{ "shape": "square", "fill": false }, { "shape": "cross" }] }
+        ],
+        [
+          { "parts": [{ "shape": "triangle", "fill": false }, { "shape": "dots", "count": 1, "r": 5 }] },
+          { "parts": [{ "shape": "triangle", "fill": false }, { "shape": "plus" }] },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "parts": [{ "shape": "triangle", "fill": false }, { "shape": "cross" }] },
+        { "id": "B", "parts": [{ "shape": "triangle", "fill": false }, { "shape": "plus" }] },
+        { "id": "C", "parts": [{ "shape": "square", "fill": false }, { "shape": "cross" }] },
+        { "id": "D", "parts": [{ "shape": "circle", "fill": false }, { "shape": "cross" }] }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Baris ketiga menggunakan segitiga sebagai bentuk luar. Kolom ketiga menggunakan tanda silang. Jadi jawabannya segitiga dengan tanda silang."
+  },
+  {
+    "id": "figural-3-020",
+    "category": "figural",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Perhatikan matriks akhir berikut. Kotak kosong harus mengikuti pola baris dan kolom. Jawaban yang benar adalah ...",
+    "stimulus": {
+      "type": "matrix",
+      "title": "Matriks Figural 12",
+      "instruction": "Setiap baris mengubah bentuk luar, sedangkan setiap kolom mengubah isi dan titik.",
+      "grid": [
+        [
+          { "shape": "circle", "fill": true, "dot": { "x": 36, "y": 20 } },
+          { "shape": "square", "fill": false, "dot": { "x": 52, "y": 36 } },
+          { "shape": "triangle", "fill": true, "dot": { "x": 36, "y": 52 } }
+        ],
+        [
+          { "shape": "circle", "fill": false, "dot": { "x": 52, "y": 36 } },
+          { "shape": "square", "fill": true, "dot": { "x": 36, "y": 52 } },
+          { "shape": "triangle", "fill": false, "dot": { "x": 20, "y": 36 } }
+        ],
+        [
+          { "shape": "circle", "fill": true, "dot": { "x": 36, "y": 52 } },
+          { "shape": "square", "fill": false, "dot": { "x": 20, "y": 36 } },
+          { "unknown": true }
+        ]
+      ],
+      "options": [
+        { "id": "A", "shape": "triangle", "fill": true, "dot": { "x": 36, "y": 20 } },
+        { "id": "B", "shape": "triangle", "fill": false, "dot": { "x": 36, "y": 20 } },
+        { "id": "C", "shape": "square", "fill": true, "dot": { "x": 36, "y": 20 } },
+        { "id": "D", "shape": "triangle", "fill": true, "dot": { "x": 52, "y": 36 } }
+      ]
+    },
+    "options": [
+      { "id": "A", "text": "Pilihan A" },
+      { "id": "B", "text": "Pilihan B" },
+      { "id": "C", "text": "Pilihan C" },
+      { "id": "D", "text": "Pilihan D" }
+    ],
+    "answer": "A",
+    "explanation": "Kolom ketiga selalu menggunakan segitiga. Pola isi pada baris ketiga adalah penuh, kosong, penuh. Posisi titik bergerak bawah, kiri, lalu atas. Jadi jawabannya segitiga penuh dengan titik di atas."
+  }
+]

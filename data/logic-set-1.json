@@ -1,0 +1,142 @@
+[
+  {
+    "id": "logic-1-001",
+    "category": "logic",
+    "type": "multiple-choice",
+    "question": "Semua karyawan memakai kartu identitas. Rina adalah karyawan. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Rina tidak memakai kartu identitas" },
+      { "id": "B", "text": "Rina memakai kartu identitas" },
+      { "id": "C", "text": "Semua orang yang memakai kartu identitas adalah karyawan" },
+      { "id": "D", "text": "Rina bukan karyawan" }
+    ],
+    "answer": "B",
+    "explanation": "Jika semua karyawan memakai kartu identitas dan Rina adalah karyawan, maka Rina memakai kartu identitas."
+  },
+  {
+    "id": "logic-1-002",
+    "category": "logic",
+    "type": "multiple-choice",
+    "question": "Jika hari hujan, maka jalan menjadi basah. Hari ini jalan tidak basah. Kesimpulan yang paling tepat adalah ...",
+    "options": [
+      { "id": "A", "text": "Hari ini pasti hujan" },
+      { "id": "B", "text": "Hari ini tidak hujan" },
+      { "id": "C", "text": "Jalan selalu kering saat hujan" },
+      { "id": "D", "text": "Tidak dapat disimpulkan apa pun" }
+    ],
+    "answer": "B",
+    "explanation": "Jika hujan maka jalan basah. Karena jalan tidak basah, maka dapat disimpulkan hari ini tidak hujan."
+  },
+  {
+    "id": "logic-1-003",
+    "category": "logic",
+    "type": "multiple-choice",
+    "question": "Semua buku di rak A berwarna biru. Buku matematika ada di rak A. Maka ...",
+    "options": [
+      { "id": "A", "text": "Buku matematika berwarna biru" },
+      { "id": "B", "text": "Semua buku biru adalah buku matematika" },
+      { "id": "C", "text": "Buku matematika tidak ada di rak A" },
+      { "id": "D", "text": "Buku di rak A bukan buku matematika" }
+    ],
+    "answer": "A",
+    "explanation": "Karena semua buku di rak A berwarna biru dan buku matematika ada di rak A, maka buku matematika berwarna biru."
+  },
+  {
+    "id": "logic-1-004",
+    "category": "logic",
+    "type": "multiple-choice",
+    "question": "Andi lebih tinggi dari Budi. Budi lebih tinggi dari Citra. Siapa yang paling pendek?",
+    "options": [
+      { "id": "A", "text": "Andi" },
+      { "id": "B", "text": "Budi" },
+      { "id": "C", "text": "Citra" },
+      { "id": "D", "text": "Tidak dapat ditentukan" }
+    ],
+    "answer": "C",
+    "explanation": "Urutannya adalah Andi > Budi > Citra. Jadi yang paling pendek adalah Citra."
+  },
+  {
+    "id": "logic-1-005",
+    "category": "logic",
+    "type": "multiple-choice",
+    "question": "Jika lampu menyala, maka ruangan terang. Ruangan gelap. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Lampu menyala" },
+      { "id": "B", "text": "Lampu tidak menyala" },
+      { "id": "C", "text": "Ruangan terang" },
+      { "id": "D", "text": "Lampu pasti rusak" }
+    ],
+    "answer": "B",
+    "explanation": "Jika lampu menyala maka ruangan terang. Karena ruangan gelap, maka lampu tidak menyala."
+  },
+  {
+    "id": "logic-1-006",
+    "category": "logic",
+    "type": "multiple-choice",
+    "question": "Semua dokter bekerja di rumah sakit. Sebagian dokter adalah dosen. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Semua dosen adalah dokter" },
+      { "id": "B", "text": "Sebagian dosen bekerja di rumah sakit" },
+      { "id": "C", "text": "Tidak ada dokter yang menjadi dosen" },
+      { "id": "D", "text": "Semua orang di rumah sakit adalah dosen" }
+    ],
+    "answer": "B",
+    "explanation": "Karena sebagian dokter adalah dosen dan semua dokter bekerja di rumah sakit, maka sebagian dosen bekerja di rumah sakit."
+  },
+  {
+    "id": "logic-1-007",
+    "category": "logic",
+    "type": "multiple-choice",
+    "question": "Urutan kegiatan: bangun tidur, mandi, sarapan, berangkat kerja. Kegiatan yang dilakukan setelah mandi adalah ...",
+    "options": [
+      { "id": "A", "text": "Bangun tidur" },
+      { "id": "B", "text": "Sarapan" },
+      { "id": "C", "text": "Berangkat kerja" },
+      { "id": "D", "text": "Tidur kembali" }
+    ],
+    "answer": "B",
+    "explanation": "Urutannya adalah bangun tidur → mandi → sarapan → berangkat kerja. Jadi setelah mandi adalah sarapan."
+  },
+  {
+    "id": "logic-1-008",
+    "category": "logic",
+    "type": "multiple-choice",
+    "question": "Jika seseorang rajin belajar, maka peluang lulus meningkat. Dodi rajin belajar. Kesimpulan yang tepat adalah ...",
+    "options": [
+      { "id": "A", "text": "Peluang Dodi lulus meningkat" },
+      { "id": "B", "text": "Dodi pasti tidak lulus" },
+      { "id": "C", "text": "Dodi tidak perlu belajar" },
+      { "id": "D", "text": "Semua orang pasti lulus" }
+    ],
+    "answer": "A",
+    "explanation": "Pernyataan menyebutkan bahwa rajin belajar meningkatkan peluang lulus. Karena Dodi rajin belajar, peluang Dodi lulus meningkat."
+  },
+  {
+    "id": "logic-1-009",
+    "category": "logic",
+    "type": "multiple-choice",
+    "question": "Tono berada di sebelah kiri Rudi. Rudi berada di sebelah kiri Sari. Siapa yang berada paling kanan?",
+    "options": [
+      { "id": "A", "text": "Tono" },
+      { "id": "B", "text": "Rudi" },
+      { "id": "C", "text": "Sari" },
+      { "id": "D", "text": "Tidak dapat ditentukan" }
+    ],
+    "answer": "C",
+    "explanation": "Urutannya dari kiri ke kanan adalah Tono, Rudi, Sari. Jadi yang paling kanan adalah Sari."
+  },
+  {
+    "id": "logic-1-010",
+    "category": "logic",
+    "type": "multiple-choice",
+    "question": "Semua peserta yang hadir mendapat nomor antrean. Maya mendapat nomor antrean. Kesimpulan yang paling tepat adalah ...",
+    "options": [
+      { "id": "A", "text": "Maya pasti hadir" },
+      { "id": "B", "text": "Maya mungkin hadir" },
+      { "id": "C", "text": "Maya tidak hadir" },
+      { "id": "D", "text": "Semua orang bernama Maya hadir" }
+    ],
+    "answer": "B",
+    "explanation": "Dari pernyataan, semua yang hadir mendapat nomor antrean. Tetapi orang yang mendapat nomor antrean belum tentu hanya yang hadir, jadi kesimpulan paling aman adalah Maya mungkin hadir."
+  }
+]

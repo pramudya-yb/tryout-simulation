@@ -1,0 +1,302 @@
+[
+  {
+    "id": "logic-2-001",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Semua analis data memahami statistik. Sebagian pegawai bagian riset adalah analis data. Kesimpulan yang paling tepat adalah ...",
+    "options": [
+      { "id": "A", "text": "Semua pegawai riset memahami statistik" },
+      { "id": "B", "text": "Sebagian pegawai riset memahami statistik" },
+      { "id": "C", "text": "Semua analis data bekerja di bagian riset" },
+      { "id": "D", "text": "Tidak ada pegawai riset yang memahami statistik" }
+    ],
+    "answer": "B",
+    "explanation": "Sebagian pegawai riset adalah analis data, dan semua analis data memahami statistik. Maka sebagian pegawai riset memahami statistik."
+  },
+  {
+    "id": "logic-2-002",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Jika laporan selesai tepat waktu, maka audit dapat dimulai. Audit tidak dapat dimulai. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Laporan selesai tepat waktu" },
+      { "id": "B", "text": "Laporan tidak selesai tepat waktu" },
+      { "id": "C", "text": "Audit tetap berjalan" },
+      { "id": "D", "text": "Laporan pasti salah" }
+    ],
+    "answer": "B",
+    "explanation": "Jika laporan selesai tepat waktu maka audit dapat dimulai. Karena audit tidak dapat dimulai, maka laporan tidak selesai tepat waktu."
+  },
+  {
+    "id": "logic-2-003",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Tidak semua peserta yang hadir mengisi daftar hadir. Raka hadir dalam kegiatan tersebut. Kesimpulan yang paling tepat adalah ...",
+    "options": [
+      { "id": "A", "text": "Raka pasti mengisi daftar hadir" },
+      { "id": "B", "text": "Raka pasti tidak mengisi daftar hadir" },
+      { "id": "C", "text": "Raka mungkin mengisi atau tidak mengisi daftar hadir" },
+      { "id": "D", "text": "Semua peserta tidak mengisi daftar hadir" }
+    ],
+    "answer": "C",
+    "explanation": "Pernyataan hanya menyebut tidak semua peserta mengisi daftar hadir. Karena Raka hadir, belum bisa dipastikan apakah ia mengisi atau tidak."
+  },
+  {
+    "id": "logic-2-004",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Jika sistem diperbarui, maka server harus dimatikan sementara. Server tidak dimatikan sementara. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Sistem diperbarui" },
+      { "id": "B", "text": "Sistem tidak diperbarui" },
+      { "id": "C", "text": "Server rusak" },
+      { "id": "D", "text": "Sistem pasti bermasalah" }
+    ],
+    "answer": "B",
+    "explanation": "Jika sistem diperbarui maka server harus dimatikan sementara. Karena server tidak dimatikan, maka sistem tidak diperbarui."
+  },
+  {
+    "id": "logic-2-005",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Andi lebih cepat dari Budi. Citra lebih lambat dari Budi. Deni lebih cepat dari Andi. Siapa yang paling cepat?",
+    "options": [
+      { "id": "A", "text": "Andi" },
+      { "id": "B", "text": "Budi" },
+      { "id": "C", "text": "Citra" },
+      { "id": "D", "text": "Deni" }
+    ],
+    "answer": "D",
+    "explanation": "Urutannya dari paling cepat adalah Deni, Andi, Budi, Citra."
+  },
+  {
+    "id": "logic-2-006",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Lima orang duduk berjajar. Rina duduk di sebelah kanan Dodi. Dodi duduk di sebelah kanan Sinta. Bima duduk di sebelah kiri Sinta. Urutan dari kiri ke kanan yang paling mungkin adalah ...",
+    "options": [
+      { "id": "A", "text": "Bima - Sinta - Dodi - Rina" },
+      { "id": "B", "text": "Rina - Dodi - Sinta - Bima" },
+      { "id": "C", "text": "Sinta - Bima - Dodi - Rina" },
+      { "id": "D", "text": "Dodi - Rina - Sinta - Bima" }
+    ],
+    "answer": "A",
+    "explanation": "Bima di kiri Sinta, Dodi di kanan Sinta, dan Rina di kanan Dodi. Maka urutan yang sesuai adalah Bima - Sinta - Dodi - Rina."
+  },
+  {
+    "id": "logic-2-007",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Semua dokumen rahasia disimpan di lemari khusus. Sebagian dokumen keuangan adalah dokumen rahasia. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Semua dokumen keuangan disimpan di lemari khusus" },
+      { "id": "B", "text": "Sebagian dokumen keuangan disimpan di lemari khusus" },
+      { "id": "C", "text": "Tidak ada dokumen keuangan yang rahasia" },
+      { "id": "D", "text": "Semua dokumen di lemari khusus adalah dokumen keuangan" }
+    ],
+    "answer": "B",
+    "explanation": "Sebagian dokumen keuangan adalah rahasia, dan semua dokumen rahasia disimpan di lemari khusus."
+  },
+  {
+    "id": "logic-2-008",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Jika pegawai mengikuti pelatihan, maka ia mendapat sertifikat. Nia mendapat sertifikat. Kesimpulan yang paling tepat adalah ...",
+    "options": [
+      { "id": "A", "text": "Nia pasti mengikuti pelatihan" },
+      { "id": "B", "text": "Nia mungkin mengikuti pelatihan" },
+      { "id": "C", "text": "Nia pasti tidak mengikuti pelatihan" },
+      { "id": "D", "text": "Semua pegawai mendapat sertifikat" }
+    ],
+    "answer": "B",
+    "explanation": "Mendapat sertifikat belum tentu hanya karena mengikuti pelatihan. Jadi kesimpulan paling aman adalah Nia mungkin mengikuti pelatihan."
+  },
+  {
+    "id": "logic-2-009",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Jika A lebih besar dari B, B lebih besar dari C, dan D lebih kecil dari C, maka pernyataan yang pasti benar adalah ...",
+    "options": [
+      { "id": "A", "text": "D lebih besar dari A" },
+      { "id": "B", "text": "A lebih besar dari D" },
+      { "id": "C", "text": "C lebih besar dari A" },
+      { "id": "D", "text": "B lebih kecil dari D" }
+    ],
+    "answer": "B",
+    "explanation": "Urutannya A > B > C > D. Maka A pasti lebih besar dari D."
+  },
+  {
+    "id": "logic-2-010",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Semua supervisor dapat menyetujui laporan. Tidak semua supervisor dapat mengubah data. Pernyataan yang paling tepat adalah ...",
+    "options": [
+      { "id": "A", "text": "Semua yang dapat menyetujui laporan dapat mengubah data" },
+      { "id": "B", "text": "Sebagian supervisor mungkin tidak dapat mengubah data" },
+      { "id": "C", "text": "Tidak ada supervisor yang dapat menyetujui laporan" },
+      { "id": "D", "text": "Semua supervisor tidak dapat mengubah data" }
+    ],
+    "answer": "B",
+    "explanation": "Tidak semua supervisor dapat mengubah data berarti ada sebagian supervisor yang mungkin tidak dapat mengubah data."
+  },
+  {
+    "id": "logic-2-011",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Dalam sebuah antrean, Aldi berada di depan Beni. Cici berada di belakang Beni. Dika berada di depan Aldi. Siapa yang berada paling depan?",
+    "options": [
+      { "id": "A", "text": "Aldi" },
+      { "id": "B", "text": "Beni" },
+      { "id": "C", "text": "Cici" },
+      { "id": "D", "text": "Dika" }
+    ],
+    "answer": "D",
+    "explanation": "Urutannya adalah Dika, Aldi, Beni, Cici. Jadi yang paling depan adalah Dika."
+  },
+  {
+    "id": "logic-2-012",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Jika kualitas data buruk, maka hasil analisis tidak dapat dipercaya. Hasil analisis dapat dipercaya. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Kualitas data buruk" },
+      { "id": "B", "text": "Kualitas data tidak buruk" },
+      { "id": "C", "text": "Analisis tidak diperlukan" },
+      { "id": "D", "text": "Data pasti lengkap" }
+    ],
+    "answer": "B",
+    "explanation": "Jika data buruk maka hasil tidak dapat dipercaya. Karena hasil dapat dipercaya, maka data tidak buruk."
+  },
+  {
+    "id": "logic-2-013",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Pernyataan: Semua produk yang lulus uji kualitas boleh dikirim. Produk X tidak boleh dikirim. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Produk X lulus uji kualitas" },
+      { "id": "B", "text": "Produk X tidak lulus uji kualitas" },
+      { "id": "C", "text": "Produk X pasti rusak total" },
+      { "id": "D", "text": "Semua produk tidak boleh dikirim" }
+    ],
+    "answer": "B",
+    "explanation": "Jika lulus uji kualitas maka boleh dikirim. Karena produk X tidak boleh dikirim, maka produk X tidak lulus uji kualitas."
+  },
+  {
+    "id": "logic-2-014",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Empat orang memiliki usia berbeda. Rani lebih tua dari Siska. Tono lebih muda dari Siska. Udin lebih tua dari Rani. Siapa yang paling tua?",
+    "options": [
+      { "id": "A", "text": "Rani" },
+      { "id": "B", "text": "Siska" },
+      { "id": "C", "text": "Tono" },
+      { "id": "D", "text": "Udin" }
+    ],
+    "answer": "D",
+    "explanation": "Urutannya adalah Udin > Rani > Siska > Tono. Jadi yang paling tua adalah Udin."
+  },
+  {
+    "id": "logic-2-015",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Jika semua aturan dipatuhi, maka risiko kesalahan menurun. Risiko kesalahan tidak menurun. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Semua aturan dipatuhi" },
+      { "id": "B", "text": "Tidak semua aturan dipatuhi" },
+      { "id": "C", "text": "Risiko kesalahan pasti hilang" },
+      { "id": "D", "text": "Aturan tidak berguna" }
+    ],
+    "answer": "B",
+    "explanation": "Jika semua aturan dipatuhi maka risiko menurun. Karena risiko tidak menurun, maka tidak semua aturan dipatuhi."
+  },
+  {
+    "id": "logic-2-016",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Semua peserta yang lolos tahap administrasi dapat mengikuti tes. Sebagian peserta yang mengikuti tes diterima bekerja. Kesimpulan yang pasti benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Semua yang lolos administrasi diterima bekerja" },
+      { "id": "B", "text": "Sebagian peserta tes diterima bekerja" },
+      { "id": "C", "text": "Semua peserta tes lolos administrasi" },
+      { "id": "D", "text": "Tidak ada peserta yang diterima bekerja" }
+    ],
+    "answer": "B",
+    "explanation": "Pernyataan kedua secara langsung menyebut bahwa sebagian peserta yang mengikuti tes diterima bekerja."
+  },
+  {
+    "id": "logic-2-017",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Jika jadwal berubah, maka seluruh tim diberi notifikasi. Sebagian tim tidak menerima notifikasi. Kesimpulan yang paling tepat adalah ...",
+    "options": [
+      { "id": "A", "text": "Jadwal berubah" },
+      { "id": "B", "text": "Jadwal tidak berubah" },
+      { "id": "C", "text": "Notifikasi pasti rusak" },
+      { "id": "D", "text": "Semua tim menerima notifikasi" }
+    ],
+    "answer": "B",
+    "explanation": "Jika jadwal berubah maka seluruh tim menerima notifikasi. Karena sebagian tim tidak menerima, maka jadwal tidak berubah."
+  },
+  {
+    "id": "logic-2-018",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Pernyataan: Beberapa staf administrasi mampu mengoperasikan sistem baru. Semua staf yang mampu mengoperasikan sistem baru akan menjadi mentor. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Beberapa staf administrasi akan menjadi mentor" },
+      { "id": "B", "text": "Semua staf administrasi akan menjadi mentor" },
+      { "id": "C", "text": "Tidak ada staf administrasi yang menjadi mentor" },
+      { "id": "D", "text": "Semua mentor adalah staf administrasi" }
+    ],
+    "answer": "A",
+    "explanation": "Beberapa staf administrasi mampu mengoperasikan sistem baru, dan semua yang mampu akan menjadi mentor. Maka beberapa staf administrasi akan menjadi mentor."
+  },
+  {
+    "id": "logic-2-019",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Jika seseorang teliti, maka ia jarang melakukan kesalahan input. Lala sering melakukan kesalahan input. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Lala teliti" },
+      { "id": "B", "text": "Lala tidak teliti" },
+      { "id": "C", "text": "Lala pasti tidak bekerja" },
+      { "id": "D", "text": "Kesalahan input tidak berhubungan dengan ketelitian" }
+    ],
+    "answer": "B",
+    "explanation": "Jika teliti maka jarang melakukan kesalahan input. Karena Lala sering melakukan kesalahan input, maka Lala tidak teliti."
+  },
+  {
+    "id": "logic-2-020",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "question": "Dalam sebuah proyek, tugas A harus selesai sebelum tugas B. Tugas B harus selesai sebelum tugas C. Tugas D dapat dikerjakan setelah tugas A selesai. Urutan yang pasti benar adalah ...",
+    "options": [
+      { "id": "A", "text": "C sebelum B" },
+      { "id": "B", "text": "B sebelum A" },
+      { "id": "C", "text": "A sebelum C" },
+      { "id": "D", "text": "D sebelum A" }
+    ],
+    "answer": "C",
+    "explanation": "A harus selesai sebelum B, dan B sebelum C. Maka A pasti sebelum C."
+  }
+]

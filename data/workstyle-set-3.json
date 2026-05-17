@@ -1,0 +1,182 @@
+[
+  {
+    "id": "workstyle-3-001",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "responsibility",
+    "question": "Saya tetap menyelesaikan tanggung jawab utama meskipun ada tugas lain yang lebih menarik.",
+    "reverseScored": false
+  },
+  {
+    "id": "workstyle-3-002",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "compliance",
+    "question": "Saya cenderung memeriksa ulang data, angka, atau detail penting sebelum pekerjaan saya dinilai orang lain.",
+    "reverseScored": false
+  },
+  {
+    "id": "workstyle-3-003",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "leadership",
+    "question": "Ketika tim menghadapi kebingungan, saya biasanya berusaha membantu menentukan langkah berikutnya.",
+    "reverseScored": false
+  },
+  {
+    "id": "workstyle-3-004",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "influence",
+    "question": "Saya mampu menjelaskan ide dengan cara yang membuat orang lain lebih mudah memahami maksud saya.",
+    "reverseScored": false
+  },
+  {
+    "id": "workstyle-3-005",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "steadiness",
+    "question": "Saat berada di bawah tekanan, saya masih dapat menjaga cara bicara dan tindakan tetap terkendali.",
+    "reverseScored": false
+  },
+  {
+    "id": "workstyle-3-006",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "adaptability",
+    "question": "Saya dapat menyesuaikan strategi kerja ketika situasi berubah dan cara lama tidak lagi efektif.",
+    "reverseScored": false
+  },
+  {
+    "id": "workstyle-3-007",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "teamwork",
+    "question": "Saya mempertimbangkan dampak keputusan saya terhadap rekan kerja dan alur kerja tim.",
+    "reverseScored": false
+  },
+  {
+    "id": "workstyle-3-008",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "achievement",
+    "question": "Saya terdorong untuk memperbaiki hasil kerja, bukan hanya menyelesaikan tugas sesuai batas minimum.",
+    "reverseScored": false
+  },
+  {
+    "id": "workstyle-3-009",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "compliance",
+    "question": "Saya sering mengabaikan prosedur jika menurut saya cara lain terasa lebih cepat.",
+    "reverseScored": true
+  },
+  {
+    "id": "workstyle-3-010",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "responsibility",
+    "question": "Jika pekerjaan tidak berjalan baik, saya lebih sering menyalahkan keadaan daripada mengevaluasi bagian saya sendiri.",
+    "reverseScored": true
+  },
+  {
+    "id": "workstyle-3-011",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "steadiness",
+    "question": "Saya mudah kehilangan fokus ketika mendapat kritik atau tekanan mendadak.",
+    "reverseScored": true
+  },
+  {
+    "id": "workstyle-3-012",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "adaptability",
+    "question": "Saya merasa sulit bekerja efektif ketika aturan, target, atau prioritas berubah secara tiba-tiba.",
+    "reverseScored": true
+  },
+  {
+    "id": "workstyle-3-013",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "teamwork",
+    "question": "Saya cenderung mempertahankan cara saya sendiri meskipun tim sudah menyepakati pendekatan yang berbeda.",
+    "reverseScored": true
+  },
+  {
+    "id": "workstyle-3-014",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "influence",
+    "question": "Saya sering kesulitan menyampaikan pendapat secara jelas dalam diskusi kerja.",
+    "reverseScored": true
+  },
+  {
+    "id": "workstyle-3-015",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "leadership",
+    "question": "Saya menghindari mengambil peran pengarah meskipun situasi membutuhkan keputusan cepat.",
+    "reverseScored": true
+  },
+  {
+    "id": "workstyle-3-016",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "achievement",
+    "question": "Saya biasanya cukup puas jika pekerjaan selesai, meskipun hasilnya masih bisa ditingkatkan.",
+    "reverseScored": true
+  },
+  {
+    "id": "workstyle-3-017",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "compliance",
+    "question": "Saya lebih nyaman bekerja dengan standar, instruksi, dan kriteria hasil yang jelas.",
+    "reverseScored": false
+  },
+  {
+    "id": "workstyle-3-018",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "adaptability",
+    "question": "Saya dapat mempelajari alat, sistem, atau metode baru tanpa terlalu lama bergantung pada bantuan orang lain.",
+    "reverseScored": false
+  },
+  {
+    "id": "workstyle-3-019",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "teamwork",
+    "question": "Dalam konflik kerja, saya berusaha memahami sudut pandang pihak lain sebelum menilai siapa yang benar.",
+    "reverseScored": false
+  },
+  {
+    "id": "workstyle-3-020",
+    "category": "workstyle",
+    "type": "likert",
+    "difficulty": "hard",
+    "dimension": "achievement",
+    "question": "Saya terbiasa menetapkan target pribadi agar performa kerja saya dapat diukur dan ditingkatkan.",
+    "reverseScored": false
+  }
+]

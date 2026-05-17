@@ -1,0 +1,322 @@
+[
+  {
+    "id": "logic-3-001",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "modus-tollens",
+    "question": "Jika seorang pegawai memahami prosedur, maka ia dapat menyelesaikan tugas tanpa banyak kesalahan. Dika tidak dapat menyelesaikan tugas tanpa banyak kesalahan. Kesimpulan yang paling tepat adalah ...",
+    "options": [
+      { "id": "A", "text": "Dika memahami prosedur" },
+      { "id": "B", "text": "Dika tidak memahami prosedur" },
+      { "id": "C", "text": "Dika pasti tidak bekerja" },
+      { "id": "D", "text": "Semua pegawai melakukan banyak kesalahan" }
+    ],
+    "answer": "B",
+    "explanation": "Ini pola Modus Tollens: Jika P maka Q. Tidak Q. Maka tidak P. Jika memahami prosedur maka tugas selesai tanpa banyak kesalahan. Karena Dika tidak demikian, maka Dika tidak memahami prosedur."
+  },
+  {
+    "id": "logic-3-002",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "modus-ponens",
+    "question": "Jika data telah diverifikasi, maka laporan dapat digunakan sebagai dasar keputusan. Data pada laporan X telah diverifikasi. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Laporan X dapat digunakan sebagai dasar keputusan" },
+      { "id": "B", "text": "Laporan X pasti salah" },
+      { "id": "C", "text": "Data laporan X belum diverifikasi" },
+      { "id": "D", "text": "Semua laporan selalu dapat digunakan" }
+    ],
+    "answer": "A",
+    "explanation": "Ini pola Modus Ponens: Jika P maka Q. P terjadi. Maka Q terjadi."
+  },
+  {
+    "id": "logic-3-003",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "silogisme",
+    "question": "Semua auditor memiliki kemampuan analisis. Sebagian pegawai bagian keuangan adalah auditor. Kesimpulan yang pasti benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Semua pegawai keuangan memiliki kemampuan analisis" },
+      { "id": "B", "text": "Sebagian pegawai keuangan memiliki kemampuan analisis" },
+      { "id": "C", "text": "Semua auditor adalah pegawai keuangan" },
+      { "id": "D", "text": "Tidak ada pegawai keuangan yang memiliki kemampuan analisis" }
+    ],
+    "answer": "B",
+    "explanation": "Sebagian pegawai keuangan adalah auditor, dan semua auditor memiliki kemampuan analisis. Maka sebagian pegawai keuangan memiliki kemampuan analisis."
+  },
+  {
+    "id": "logic-3-004",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "kuantor",
+    "question": "Tidak semua peserta yang mengikuti pelatihan lulus ujian akhir. Rina mengikuti pelatihan. Kesimpulan yang paling tepat adalah ...",
+    "options": [
+      { "id": "A", "text": "Rina pasti lulus ujian akhir" },
+      { "id": "B", "text": "Rina pasti tidak lulus ujian akhir" },
+      { "id": "C", "text": "Rina mungkin lulus atau tidak lulus ujian akhir" },
+      { "id": "D", "text": "Semua peserta pelatihan tidak lulus ujian akhir" }
+    ],
+    "answer": "C",
+    "explanation": "Pernyataan 'tidak semua' hanya menyatakan bahwa ada peserta yang tidak lulus. Karena Rina mengikuti pelatihan, status kelulusannya belum dapat dipastikan."
+  },
+  {
+    "id": "logic-3-005",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "negasi",
+    "question": "Pernyataan: “Semua dokumen penting harus disimpan di arsip pusat.” Negasi yang paling tepat dari pernyataan tersebut adalah ...",
+    "options": [
+      { "id": "A", "text": "Tidak ada dokumen penting yang disimpan di arsip pusat" },
+      { "id": "B", "text": "Semua dokumen tidak penting disimpan di arsip pusat" },
+      { "id": "C", "text": "Ada dokumen penting yang tidak harus disimpan di arsip pusat" },
+      { "id": "D", "text": "Semua dokumen penting tidak boleh disimpan di arsip pusat" }
+    ],
+    "answer": "C",
+    "explanation": "Negasi dari 'semua A adalah B' adalah 'ada A yang bukan B'. Jadi negasinya: ada dokumen penting yang tidak harus disimpan di arsip pusat."
+  },
+  {
+    "id": "logic-3-006",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "deduksi-bertingkat",
+    "question": "Jika sistem baru diterapkan, maka pegawai harus mengikuti pelatihan. Jika pegawai mengikuti pelatihan, maka sertifikat diberikan. Sistem baru diterapkan. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Pegawai tidak perlu pelatihan" },
+      { "id": "B", "text": "Sertifikat diberikan" },
+      { "id": "C", "text": "Sistem baru tidak diterapkan" },
+      { "id": "D", "text": "Pelatihan dibatalkan" }
+    ],
+    "answer": "B",
+    "explanation": "Sistem baru diterapkan → pegawai mengikuti pelatihan → sertifikat diberikan. Jadi kesimpulannya sertifikat diberikan."
+  },
+  {
+    "id": "logic-3-007",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "kesalahan-logika",
+    "question": "Jika seseorang lulus seleksi administrasi, maka ia dapat mengikuti tes tertulis. Bima dapat mengikuti tes tertulis. Kesimpulan yang paling tepat adalah ...",
+    "options": [
+      { "id": "A", "text": "Bima pasti lulus seleksi administrasi" },
+      { "id": "B", "text": "Bima mungkin lulus seleksi administrasi" },
+      { "id": "C", "text": "Bima pasti tidak lulus seleksi administrasi" },
+      { "id": "D", "text": "Semua peserta tes tertulis gagal administrasi" }
+    ],
+    "answer": "B",
+    "explanation": "Ini bukan kesimpulan pasti. Dari 'jika P maka Q' dan Q terjadi, tidak otomatis P pasti terjadi. Jadi Bima mungkin lulus administrasi, tetapi tidak pasti."
+  },
+  {
+    "id": "logic-3-008",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "urutan",
+    "question": "Lima dokumen A, B, C, D, dan E harus diperiksa. A diperiksa sebelum C. B diperiksa setelah C. D diperiksa sebelum A. E diperiksa setelah B. Urutan yang pasti benar adalah ...",
+    "options": [
+      { "id": "A", "text": "D sebelum C" },
+      { "id": "B", "text": "E sebelum B" },
+      { "id": "C", "text": "C sebelum A" },
+      { "id": "D", "text": "B sebelum C" }
+    ],
+    "answer": "A",
+    "explanation": "D sebelum A, dan A sebelum C. Maka D pasti sebelum C."
+  },
+  {
+    "id": "logic-3-009",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "silogisme-negatif",
+    "question": "Semua laporan yang tidak lengkap tidak dapat diproses. Laporan Y dapat diproses. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Laporan Y tidak lengkap" },
+      { "id": "B", "text": "Laporan Y lengkap" },
+      { "id": "C", "text": "Laporan Y pasti tidak penting" },
+      { "id": "D", "text": "Semua laporan dapat diproses" }
+    ],
+    "answer": "B",
+    "explanation": "Jika laporan tidak lengkap maka tidak dapat diproses. Karena laporan Y dapat diproses, maka laporan Y bukan laporan tidak lengkap, artinya lengkap."
+  },
+  {
+    "id": "logic-3-010",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "sebab-akibat",
+    "question": "Jika mesin utama berhenti, maka produksi terhenti. Produksi tidak terhenti. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Mesin utama berhenti" },
+      { "id": "B", "text": "Mesin utama tidak berhenti" },
+      { "id": "C", "text": "Produksi pasti gagal" },
+      { "id": "D", "text": "Mesin utama rusak total" }
+    ],
+    "answer": "B",
+    "explanation": "Ini Modus Tollens: Jika mesin utama berhenti maka produksi terhenti. Produksi tidak terhenti. Maka mesin utama tidak berhenti."
+  },
+  {
+    "id": "logic-3-011",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "relasi",
+    "question": "Raka lebih teliti daripada Seno. Seno lebih teliti daripada Tio. Vina kurang teliti daripada Tio. Pernyataan yang pasti benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Vina lebih teliti daripada Raka" },
+      { "id": "B", "text": "Raka lebih teliti daripada Vina" },
+      { "id": "C", "text": "Tio lebih teliti daripada Raka" },
+      { "id": "D", "text": "Seno kurang teliti daripada Vina" }
+    ],
+    "answer": "B",
+    "explanation": "Urutannya Raka > Seno > Tio > Vina. Maka Raka pasti lebih teliti daripada Vina."
+  },
+  {
+    "id": "logic-3-012",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "kuantor",
+    "question": "Sebagian analis bukan supervisor. Semua supervisor dapat menyetujui laporan. Kesimpulan yang pasti benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Semua analis dapat menyetujui laporan" },
+      { "id": "B", "text": "Sebagian analis tidak dapat menyetujui laporan" },
+      { "id": "C", "text": "Sebagian analis bukan supervisor" },
+      { "id": "D", "text": "Tidak ada supervisor yang dapat menyetujui laporan" }
+    ],
+    "answer": "C",
+    "explanation": "Pernyataan C sama dengan premis pertama sehingga pasti benar. Dari premis yang ada, tidak dapat dipastikan apakah analis yang bukan supervisor dapat atau tidak dapat menyetujui laporan."
+  },
+  {
+    "id": "logic-3-013",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "kombinasi-syarat",
+    "question": "Seorang kandidat diterima jika lulus wawancara dan lulus tes kemampuan. Nanda lulus wawancara tetapi tidak lulus tes kemampuan. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Nanda diterima" },
+      { "id": "B", "text": "Nanda tidak diterima" },
+      { "id": "C", "text": "Nanda pasti tidak mengikuti wawancara" },
+      { "id": "D", "text": "Tes kemampuan tidak diperlukan" }
+    ],
+    "answer": "B",
+    "explanation": "Syarat diterima adalah lulus wawancara dan lulus tes kemampuan. Karena Nanda tidak lulus tes kemampuan, maka syarat tidak terpenuhi."
+  },
+  {
+    "id": "logic-3-014",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "kombinasi-atau",
+    "question": "Untuk masuk ruang arsip, pegawai harus membawa kartu akses atau didampingi supervisor. Leni tidak membawa kartu akses dan tidak didampingi supervisor. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Leni dapat masuk ruang arsip" },
+      { "id": "B", "text": "Leni tidak dapat masuk ruang arsip" },
+      { "id": "C", "text": "Leni adalah supervisor" },
+      { "id": "D", "text": "Kartu akses tidak diperlukan" }
+    ],
+    "answer": "B",
+    "explanation": "Syarat masuk adalah membawa kartu akses atau didampingi supervisor. Leni tidak memenuhi keduanya, sehingga tidak dapat masuk."
+  },
+  {
+    "id": "logic-3-015",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "inferensi",
+    "question": "Semua karyawan yang mendapat akses sistem telah menandatangani perjanjian kerahasiaan. Tono belum menandatangani perjanjian kerahasiaan. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Tono mendapat akses sistem" },
+      { "id": "B", "text": "Tono tidak mendapat akses sistem" },
+      { "id": "C", "text": "Tono pasti bukan karyawan" },
+      { "id": "D", "text": "Semua karyawan belum menandatangani perjanjian" }
+    ],
+    "answer": "B",
+    "explanation": "Jika mendapat akses sistem maka telah menandatangani perjanjian. Karena Tono belum menandatangani, maka Tono tidak mendapat akses sistem."
+  },
+  {
+    "id": "logic-3-016",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "validitas-argumen",
+    "question": "Pernyataan: “Jika target tercapai, maka bonus diberikan.” Bonus tidak diberikan. Kesimpulan yang valid adalah ...",
+    "options": [
+      { "id": "A", "text": "Target tercapai" },
+      { "id": "B", "text": "Target tidak tercapai" },
+      { "id": "C", "text": "Bonus selalu diberikan" },
+      { "id": "D", "text": "Target tidak berkaitan dengan bonus" }
+    ],
+    "answer": "B",
+    "explanation": "Pola ini adalah Modus Tollens: Jika P maka Q. Tidak Q. Maka tidak P."
+  },
+  {
+    "id": "logic-3-017",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "argumentasi",
+    "question": "Argumen: “Semua proyek yang selesai tepat waktu memiliki manajemen risiko yang baik. Proyek Z selesai tepat waktu. Maka proyek Z memiliki manajemen risiko yang baik.” Bentuk penalaran ini adalah ...",
+    "options": [
+      { "id": "A", "text": "Modus Ponens" },
+      { "id": "B", "text": "Modus Tollens" },
+      { "id": "C", "text": "Kesalahan sebab-akibat" },
+      { "id": "D", "text": "Kontradiksi langsung" }
+    ],
+    "answer": "A",
+    "explanation": "Strukturnya adalah jika P maka Q, P terjadi, maka Q. Ini adalah Modus Ponens."
+  },
+  {
+    "id": "logic-3-018",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "argumentasi",
+    "question": "Argumen: “Jika seseorang ahli presentasi, maka ia mampu menjelaskan ide dengan jelas. Doni mampu menjelaskan ide dengan jelas. Maka Doni ahli presentasi.” Kelemahan argumen tersebut adalah ...",
+    "options": [
+      { "id": "A", "text": "Menolak akibat" },
+      { "id": "B", "text": "Mengafirmasi akibat" },
+      { "id": "C", "text": "Silogisme valid" },
+      { "id": "D", "text": "Premis mustahil" }
+    ],
+    "answer": "B",
+    "explanation": "Dari jika P maka Q, lalu Q benar, tidak otomatis P benar. Ini kesalahan logika mengafirmasi akibat."
+  },
+  {
+    "id": "logic-3-019",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "penalaran-kondisional",
+    "question": "Jika rapat dilakukan secara daring, maka tautan rapat dikirim melalui email. Tautan rapat tidak dikirim melalui email. Kesimpulan yang benar adalah ...",
+    "options": [
+      { "id": "A", "text": "Rapat dilakukan secara daring" },
+      { "id": "B", "text": "Rapat tidak dilakukan secara daring" },
+      { "id": "C", "text": "Email tidak pernah digunakan" },
+      { "id": "D", "text": "Semua rapat dilakukan luring" }
+    ],
+    "answer": "B",
+    "explanation": "Jika rapat daring maka tautan dikirim melalui email. Karena tautan tidak dikirim, maka rapat tidak dilakukan secara daring."
+  },
+  {
+    "id": "logic-3-020",
+    "category": "logic",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "subtest": "deduksi-kompleks",
+    "question": "Jika A terjadi, maka B terjadi. Jika B terjadi, maka C tidak terjadi. C terjadi. Kesimpulan yang paling tepat adalah ...",
+    "options": [
+      { "id": "A", "text": "A terjadi" },
+      { "id": "B", "text": "B terjadi" },
+      { "id": "C", "text": "A tidak terjadi" },
+      { "id": "D", "text": "A dan B pasti terjadi" }
+    ],
+    "answer": "C",
+    "explanation": "Jika B terjadi maka C tidak terjadi. Karena C terjadi, maka B tidak terjadi. Jika A terjadi maka B terjadi. Karena B tidak terjadi, maka A tidak terjadi."
+  }
+]
