@@ -1,0 +1,89 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    match /users/{userId} {
+      allow create: if isOwner(userId);
+      allow read: if isOwner(userId);
+      allow update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    match /schools/{schoolSlug} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn()
+        && request.resource.data.createdBy == request.auth.uid;
+      allow update: if isSignedIn()
+        && resource.data.createdBy == request.auth.uid;
+      allow delete: if false;
+    }
+
+    match /teacher_usernames/{username} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn()
+        && request.resource.data.uid == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    match /teacher_questions/{questionId} {
+      // Any signed-in user can read questions (students need this for exams)
+      allow read: if isSignedIn();
+      allow create: if isSignedIn()
+        && request.resource.data.teacherId == request.auth.uid;
+      allow update: if isSignedIn()
+        && resource.data.teacherId == request.auth.uid;
+      allow delete: if isSignedIn()
+        && resource.data.teacherId == request.auth.uid;
+    }
+
+    match /exam_packages/{examId} {
+      // Teachers can read their own packages
+      // Students can read published packages
+      allow read: if isSignedIn()
+        && (resource.data.teacherId == request.auth.uid
+            || resource.data.isPublished == true);
+      allow create: if isSignedIn()
+        && request.resource.data.teacherId == request.auth.uid;
+      allow update: if isSignedIn()
+        && resource.data.teacherId == request.auth.uid;
+      allow delete: if isSignedIn()
+        && resource.data.teacherId == request.auth.uid;
+    }
+
+    match /exam_results/{resultId} {
+      // Teachers can read results for their exams
+      // Students can read their own results
+      allow read: if isSignedIn()
+        && (resource.data.teacherId == request.auth.uid
+            || resource.data.studentId == request.auth.uid);
+      // Students can create their own results
+      allow create: if isSignedIn()
+        && request.resource.data.studentId == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    match /remedial_access/{accessId} {
+      // Teachers and students can read their own remedial access
+      allow read: if isSignedIn()
+        && (resource.data.studentId == request.auth.uid
+            || resource.data.teacherId == request.auth.uid);
+      // Teachers can create remedial access for their exams
+      allow create: if isSignedIn()
+        && request.resource.data.teacherId == request.auth.uid;
+      // Teachers can update, students can mark as used
+      allow update: if isSignedIn()
+        && (resource.data.teacherId == request.auth.uid
+            || resource.data.studentId == request.auth.uid);
+      allow delete: if false;
+    }
+  }
+}

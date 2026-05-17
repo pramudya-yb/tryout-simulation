@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "question": "Pancasila sebagai dasar negara Indonesia pertama kali diusulkan oleh Ir. Soekarno pada sidang BPUPKI tanggal...",
+    "options": {
+      "A": "28 Mei 1945",
+      "B": "1 Juni 1945",
+      "C": "17 Agustus 1945",
+      "D": "18 Agustus 1945"
+    },
+    "answer": "B",
+    "explanation": "Ir. Soekarno mengusulkan nama 'Pancasila' pada tanggal 1 Juni 1945 dalam sidang BPUPKI, yang kemudian diperingati sebagai Hari Lahir Pancasila."
+  },
+  {
+    "id": "2",
+    "question": "Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 telah mengalami amandemen sebanyak...",
+    "options": {
+      "A": "2 kali",
+      "B": "3 kali",
+      "C": "4 kali",
+      "D": "5 kali"
+    },
+    "answer": "C",
+    "explanation": "UUD 1945 telah diamandemen sebanyak 4 kali: Amandemen I (1999), II (2000), III (2001), dan IV (2002)."
+  },
+  {
+    "id": "3",
+    "question": "Bhinneka Tunggal Ika berasal dari kitab Sutasoma yang ditulis oleh...",
+    "options": {
+      "A": "Mpu Prapanca",
+      "B": "Mpu Tantular",
+      "C": "Mpu Gandring",
+      "D": "Mpu Sindok"
+    },
+    "answer": "B",
+    "explanation": "Semboyan Bhinneka Tunggal Ika diambil dari Kitab Sutasoma karya Mpu Tantular pada masa Kerajaan Majapahit."
+  },
+  {
+    "id": "4",
+    "question": "Pasal berapa dalam UUD 1945 yang mengatur tentang hak setiap warga negara untuk mendapatkan pekerjaan dan penghidupan yang layak?",
+    "options": {
+      "A": "Pasal 27 ayat (2)",
+      "B": "Pasal 28 ayat (1)",
+      "C": "Pasal 29 ayat (1)",
+      "D": "Pasal 31 ayat (1)"
+    },
+    "answer": "A",
+    "explanation": "Pasal 27 ayat (2) UUD 1945 menyatakan: 'Tiap-tiap warga negara berhak atas pekerjaan dan penghidupan yang layak bagi kemanusiaan.'"
+  },
+  {
+    "id": "5",
+    "question": "Sistem pemerintahan Indonesia berdasarkan UUD 1945 adalah...",
+    "options": {
+      "A": "Presidensial",
+      "B": "Parlementer",
+      "C": "Semi-presidensial",
+      "D": "Monarki Konstitusional"
+    },
+    "answer": "A",
+    "explanation": "Indonesia menganut sistem pemerintahan presidensial di mana presiden menjadi kepala negara sekaligus kepala pemerintahan."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "question": "Anda mendapat tugas baru dari atasan yang tidak sesuai dengan keahlian Anda. Apa yang Anda lakukan?",
+    "options": {
+      "A": "Menolak karena bukan bidang saya",
+      "B": "Menerima dan belajar hal baru untuk menyelesaikannya",
+      "C": "Menyerahkan kembali ke atasan setelah beberapa hari",
+      "D": "Mengerjakan semampunya tanpa bertanya"
+    },
+    "answer": "B",
+    "explanation": "Jawaban B menunjukkan semangat berprestasi dan kemampuan beradaptasi yang tinggi — karakter penting seorang ASN."
+  },
+  {
+    "id": "2",
+    "question": "Seorang rekan kerja Anda memberikan laporan yang Anda ketahui mengandung data yang tidak akurat. Sikap Anda adalah...",
+    "options": {
+      "A": "Diam saja karena bukan urusan saya",
+      "B": "Melaporkan langsung ke atasan tanpa memberitahu rekan",
+      "C": "Memberitahu rekan secara baik-baik agar memperbaiki laporan",
+      "D": "Memperbaiki laporan tersebut diam-diam"
+    },
+    "answer": "C",
+    "explanation": "Jawaban C mencerminkan integritas dan kerja sama tim yang baik dengan cara yang konstruktif."
+  },
+  {
+    "id": "3",
+    "question": "Warga yang Anda layani marah-marah karena pelayanan yang lama. Apa respons Anda?",
+    "options": {
+      "A": "Membalas dengan nada tinggi karena merasa diperlakukan tidak adil",
+      "B": "Mengabaikan dan melanjutkan pekerjaan",
+      "C": "Meminta maaf, menjelaskan proses, dan menawarkan solusi",
+      "D": "Menyuruh warga datang hari lain"
+    },
+    "answer": "C",
+    "explanation": "Jawaban C menunjukkan orientasi pelayanan prima dan kemampuan mengelola konflik dengan profesional."
+  }
+]

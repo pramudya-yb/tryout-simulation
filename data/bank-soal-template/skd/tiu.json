@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "question": "Jika APEL = 1-16-5-12, maka BUKU = ...",
+    "options": {
+      "A": "2-21-11-21",
+      "B": "2-21-11-20",
+      "C": "3-21-11-21",
+      "D": "2-20-11-21"
+    },
+    "answer": "A",
+    "explanation": "Kode angka sesuai urutan alfabet (A=1, B=2, ...). B=2, U=21, K=11, U=21, sehingga BUKU = 2-21-11-21."
+  },
+  {
+    "id": "2",
+    "question": "Deret angka: 2, 6, 12, 20, 30, ... Angka selanjutnya adalah...",
+    "options": {
+      "A": "38",
+      "B": "40",
+      "C": "42",
+      "D": "44"
+    },
+    "answer": "C",
+    "explanation": "Selisih: 4, 6, 8, 10, 12. Angka selanjutnya: 30 + 12 = 42."
+  },
+  {
+    "id": "3",
+    "question": "Semua kucing adalah hewan. Beberapa hewan adalah jinak. Kesimpulan yang tepat adalah...",
+    "options": {
+      "A": "Semua kucing jinak",
+      "B": "Beberapa kucing mungkin jinak",
+      "C": "Tidak ada kucing yang jinak",
+      "D": "Semua hewan jinak"
+    },
+    "answer": "B",
+    "explanation": "Dari premis 'beberapa hewan jinak' dan 'semua kucing adalah hewan', kita hanya dapat menyimpulkan bahwa beberapa kucing mungkin jinak."
+  },
+  {
+    "id": "4",
+    "question": "Jika harga 5 kg beras adalah Rp75.000, maka harga 8 kg beras adalah...",
+    "options": {
+      "A": "Rp110.000",
+      "B": "Rp112.000",
+      "C": "Rp120.000",
+      "D": "Rp125.000"
+    },
+    "answer": "C",
+    "explanation": "Harga per kg = Rp75.000 ÷ 5 = Rp15.000. Harga 8 kg = 8 × Rp15.000 = Rp120.000."
+  },
+  {
+    "id": "5",
+    "question": "Analogi: PANAS : API = BASAH : ...",
+    "options": {
+      "A": "Hujan",
+      "B": "Air",
+      "C": "Laut",
+      "D": "Banjir"
+    },
+    "answer": "B",
+    "explanation": "Panas dihasilkan oleh Api. Basah dihasilkan oleh Air. Hubungan: akibat : sumber/penyebab."
+  }
+]
