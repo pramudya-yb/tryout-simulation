@@ -11,14 +11,16 @@ service cloud.firestore {
       return isSignedIn() && request.auth.uid == userId;
     }
 
+    // Data peserta CPNS
     match /users/{userId} {
       allow create: if isOwner(userId);
-      allow read: if isOwner(userId);
+      allow read:   if isOwner(userId);
       allow update: if isOwner(userId);
       allow delete: if false;
     }
 
-    match /schools/{schoolSlug} {
+    // Data instansi pemerintah (K/L/Pemda)
+    match /instansi/{instansiSlug} {
       allow read: if isSignedIn();
       allow create: if isSignedIn()
         && request.resource.data.createdBy == request.auth.uid;
@@ -27,62 +29,68 @@ service cloud.firestore {
       allow delete: if false;
     }
 
-    match /teacher_usernames/{username} {
+    // Username unik untuk admin/pengawas
+    match /admin_usernames/{username} {
       allow read: if isSignedIn();
       allow create: if isSignedIn()
         && request.resource.data.uid == request.auth.uid;
       allow update, delete: if false;
     }
 
-    match /teacher_questions/{questionId} {
-      // Any signed-in user can read questions (students need this for exams)
+    // Bank soal SKD & SKB
+    // - Admin bisa kelola soal miliknya
+    // - Peserta bisa baca soal saat ujian berlangsung
+    match /bank_soal/{soalId} {
       allow read: if isSignedIn();
       allow create: if isSignedIn()
-        && request.resource.data.teacherId == request.auth.uid;
+        && request.resource.data.adminId == request.auth.uid;
       allow update: if isSignedIn()
-        && resource.data.teacherId == request.auth.uid;
+        && resource.data.adminId == request.auth.uid;
       allow delete: if isSignedIn()
-        && resource.data.teacherId == request.auth.uid;
+        && resource.data.adminId == request.auth.uid;
     }
 
-    match /exam_packages/{examId} {
-      // Teachers can read their own packages
-      // Students can read published packages
+    // Paket ujian SKD / SKB
+    // - Admin bisa baca paket miliknya
+    // - Peserta bisa baca paket yang sudah dipublikasikan
+    match /paket_ujian/{paketId} {
       allow read: if isSignedIn()
-        && (resource.data.teacherId == request.auth.uid
+        && (resource.data.adminId == request.auth.uid
             || resource.data.isPublished == true);
       allow create: if isSignedIn()
-        && request.resource.data.teacherId == request.auth.uid;
+        && request.resource.data.adminId == request.auth.uid;
       allow update: if isSignedIn()
-        && resource.data.teacherId == request.auth.uid;
+        && resource.data.adminId == request.auth.uid;
       allow delete: if isSignedIn()
-        && resource.data.teacherId == request.auth.uid;
+        && resource.data.adminId == request.auth.uid;
     }
 
-    match /exam_results/{resultId} {
-      // Teachers can read results for their exams
-      // Students can read their own results
+    // Hasil ujian SKD / SKB
+    // - Admin bisa baca hasil ujian yang dikelolanya
+    // - Peserta hanya bisa baca hasil ujian miliknya sendiri
+    match /hasil_ujian/{hasilId} {
       allow read: if isSignedIn()
-        && (resource.data.teacherId == request.auth.uid
-            || resource.data.studentId == request.auth.uid);
-      // Students can create their own results
+        && (resource.data.adminId == request.auth.uid
+            || resource.data.pesertaId == request.auth.uid);
+      // Peserta membuat hasil ujian atas namanya sendiri
       allow create: if isSignedIn()
-        && request.resource.data.studentId == request.auth.uid;
+        && request.resource.data.pesertaId == request.auth.uid;
       allow update, delete: if false;
     }
 
-    match /remedial_access/{accessId} {
-      // Teachers and students can read their own remedial access
+    // Akses ujian ulang (jika peserta diizinkan mencoba kembali)
+    // - Admin & peserta bisa baca akses miliknya
+    // - Hanya admin yang bisa membuat akses ujian ulang
+    // - Admin bisa update; peserta hanya bisa menandai sudah digunakan
+    match /akses_ujian_ulang/{aksesId} {
       allow read: if isSignedIn()
-        && (resource.data.studentId == request.auth.uid
-            || resource.data.teacherId == request.auth.uid);
-      // Teachers can create remedial access for their exams
+        && (resource.data.pesertaId == request.auth.uid
+            || resource.data.adminId == request.auth.uid);
       allow create: if isSignedIn()
-        && request.resource.data.teacherId == request.auth.uid;
-      // Teachers can update, students can mark as used
+        && request.resource.data.adminId == request.auth.uid;
       allow update: if isSignedIn()
-        && (resource.data.teacherId == request.auth.uid
-            || resource.data.studentId == request.auth.uid);
+        && (resource.data.adminId == request.auth.uid
+            || resource.data.pesertaId == request.auth.uid);
       allow delete: if false;
     }
   }
