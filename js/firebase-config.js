@@ -6,12 +6,12 @@ import { getAuth, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/
 import { getFirestore } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA5qxPy2iS5Lrb9H-roQV3yg-fLnm9lGo4",
-  authDomain: "belajar-tryout-gratis.firebaseapp.com",
-  projectId: "belajar-tryout-gratis",
-  storageBucket: "belajar-tryout-gratis.firebasestorage.app",
-  messagingSenderId: "868417168736",
-  appId: "1:868417168736:web:275e03976484f63f95aa05"
+  apiKey: "AIzaSyBP7YCoej_tJ2ZbbTZYuUfNrq19yp2LgwE",
+  authDomain: "test-123-c4413.firebaseapp.com",
+  projectId: "test-123-c4413",
+  storageBucket: "test-123-c4413.firebasestorage.app",
+  messagingSenderId: "847186336081",
+  appId: "1:847186336081:web:e5fd352be7fd8e9e425b70",
 };
 
 export const app = initializeApp(firebaseConfig);
